@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.social-icon1,
+.social-icon2,
+.social-icon3,
+.social-icon4{
+    color: #0d6efd;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-icon1:hover,
+.social-icon2:hover,
+.social-icon3:hover,
+.social-icon4:hover{
+    color: #000000;
+}
+
+.facebook,
+.instagram,
+.twitter,
+.telefone{
+    text-decoration: none;
+}

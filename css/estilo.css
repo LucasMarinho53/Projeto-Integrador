@@ -1,5 +1,95 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS',Arial;
+}
+
+header.container-fluid{
+    background-color: #FEEBC2;
+}
+
+section.container header.topo nav.navbar{
+    height: auto;
+}
+
+header.container-fluid div.collapse{
+	margin-left:50px;
+}
+
+section.container #h4{
+    padding-bottom: 40px;
+}
+
+footer.container-foot{
+    background-color: #FEEBC2;
+}
+
+section.links #footerlink{
+    width: 400px;
+    height: 80px;
+    /*background-color: #000;*/
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+section.mapa #shoppingmapa{
+    width: 400px;
+    height: 200px;
+    /*background-color: #000;*/
+    float: right;
+    margin-top: -220px;
+    margin-right: 100px;
+}
+
+footer #logofooter{
+    float: right;
+    /*background-color: #000;*/
+    margin-top: -220px;
+    margin-right: 600px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width:992px) and (min-width:668px){
+
+    header.container-fluid div.topo nav.navbar a{
+        /*background-color: #000000;*/
+        font-size: 15px;
+        margin: -15px;
+    }
+
+    header.container-fluid div.topo nav.navbar div.collapse ul li{
+        margin-left: 10px;
+        margin-right: -75px;
+        /*background-color: blue;*/
+    }
+
+    header.container-fluid ul.dropdown-menu a.dropdown-item{
+        /*background-color: blue;*/
+        height: 45px;
+        font-size: 15px;
+    }
+
+    header.container-fluid form.pesquisar{
+        width: 200px;
+        /*background-color: #000000;*/
+        margin-bottom: 9px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:667px){
+    
+    header.container-fluid div.topo nav.navbar a{
+        /*background-color: #000000;*/
+        margin-left: 130px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:457px){
+   
+   section.container header.topo{
+       float: none;
+       margin: auto;
+   }
 }

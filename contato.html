@@ -6,54 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="css/contato.css" />
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Contato</title>
+    <title>Star Frame</title>
 </head>
 
 <body>
 
-  <header class="container-fluid bg-dark">
+  <header class="container-fluid">
 
     <div class="topo">
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="img/logo3.svg" width="300px" height="130px" alt=""></a> <!--logo do site-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <a class="navbar-brand" href="projeto.html"><img src="img/logo3.svg" width="300px" height="130px" alt=""></a> <!--logo do site-->
+            <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li id="home" style="width: 100px;" class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a> <!--link direcionando outras paginas-->
+                    <li id="home" style="width: 150px;" class="nav-item">
+                        <a class="nav-link active text-primary" aria-current="page" href="projeto.html"><strong>Home</strong></a> <!--link direcionando outras paginas-->
                     </li>
-                    <li style="width: 115px;" class="nav-item">
-                        <a class="nav-link text-white" href="#">Contato</a> <!--link direcionando outras paginas-->
+                    <li id="contato" style="width: 165px;" class="nav-item">
+                        <a class="nav-link text-primary" href="contato.html"><strong>Contato</strong></a> <!--link direcionando outras paginas-->
                     </li>
-                    <li style="width: 115px;" class="nav-item">
-                        <a class="nav-link text-white" href="#">Cadastro</a> <!--link direcionando outras paginas-->
+                    <li id="cadastro" style="width: 165px;" class="nav-item">
+                        <a class="nav-link text-primary" href="cadastro.html"><strong>Cadastro</strong></a> <!--link direcionando outras paginas-->
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                        <a class="nav-link text-primary dropdown-toggle" href="#" id="navbarDropdown" role="button" 
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Quadros
+                            <strong>Quadros</strong>
                         </a> <!--link direcionando outras paginas-->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Geek</a></li>
-                            <li><a class="dropdown-item" href="#">Office</a></li>
-                            <li><a class="dropdown-item" href="#">Kids</a></li>
-                            <li><a class="dropdown-item" href="#">Room</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="geek.html">Geek</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="office.html">Office</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="kids.html">Kids</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="room.html">Room</a></li>
                         </ul>
                     </li>
-
                 </ul>
-                <form class="d-flex">
+                <form class="pesquisar d-flex">
                     <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    <button class="btn btn-primary" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
@@ -61,6 +61,19 @@
   </div>
   </header>
 
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> <!--colocar banner foto combinando height-->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       </div>
+    <div class="carousel-inner"> <!--colocar banner foto combinando height-->
+      <div class="carousel-item active">
+        <img src="img/decorando-com-quadros.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item"> <!--colocar banner foto combinando height-->
+        <img src="img/banner5.jpeg" class="d-block w-100" alt="...">
+      </div><!--observação: Parcialmente feito-->
+      
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -71,64 +84,114 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+			
+  <section class="container mt-3">
 
-<section class="container">
-
-</section>
-
-<!-- Footer -->
-<footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4">
+    <div class="row">
       
-      <!-- Section: Text -->
-      <section class="col-4 mt-2">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-          eum harum corrupti dicta, aliquam sequi voluptate quas.
-        </p>
-      </section>
-      <!-- Section: Text -->
+      <div class="text-center">
+      
+      <img src="img/contatoquadro3.png" class="rounded float-start" style="margin-left: 115px;" width="300" alt="...">
+      
+      <img src="img/contatoquadro2.png" class="rounded" style="margin-right: 50px; margin-left: 50px;" width="350" alt="...">
+      
+      <img src="img/contatoquadro4.png" class="rounded float-end" style="margin-right: 120px;" width="300" alt="...">
+      
+      <hr class="dropdown-divider">
   
-      <!-- Section: Links -->
-      <section class="">
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Home</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Contato</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Cadastro</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
+      
+    
+      </div>
+      
+      <div class="row">
+        <div class="col-8">
+          <h4>Quem Somos</h4>
+          <br><br>
+          <p>A Star Frames surgiu de uma ideia não de vendas, e sim, de um conceito de trazer a arte para os ambientes a nossa volta e criar o entorno de nossas vidas mais agradável.</p>
+          <p>A empresa surgiu em 2012 e completando 10 ano de atuação no mercado, visando excelência nos atendimentos e sempre buscando a melhor forma ajudar na escolha dos quadros ideias para sua casa, escritório e qualquer ambiente que precise de uma sobrevida.</p>
+          <p>Todos sabemos que quadros decorativos são essenciais na decoração de qualquer ambiente, porém escolher o modelo ideal nem sempre é uma tarefa fácil. A maioria das pessoas ficam confusas e indecisas na hora de definir qual imagem usar, qual tamanho escolher e até mesmo como combinar. O que devemos ter em mente, é que os quadros decorativos devem refletir a nossa identidade, transformando o ambiente em uma extensão da nossa personalidade.</p>
+          <p>Somos uma loja virtual e trabalhamos com uma equipe de profissionais de arquitetura, design de interiores e design gráfico capacitados e motivados em tudo que faz. Gostamos do nosso trabalho e queremos  oferecer o melhor da  decoração com produtos de qualidade, sempre cuidando do atendimento, logística e pós venda.</p>
+          <p>Nossos produtos são elaborados com  muita criatividade, fazendo uso de  matérias- primas como acrílico, adesivo e tecidos , criando sempre novidades em estampas e imagens  que se transformam na solução  perfeita  para tornar  ambientes mais bonitos e agradáveis.</p>
         </div>
-        <!--Grid row-->
-      </section>
-      <!-- Section: Links -->
-    </div>
-    <!-- Grid container -->
+        <div class="col-4">
+          <h4>Contato</h4>
+          <br><br>
+          <a class="social-icon1" href="#" target="_blank";>
+            <ion-icon name="logo-facebook" size="large";></ion-icon><p class="facebook">https://facebook.com/starframequadros</p>
+          </a>
+          <br><br>
+          <a class="social-icon2" href="#" target="_blank";>
+            <ion-icon name="logo-instagram" size="large"></ion-icon><p class="instagram">https://instagram/starframequadros</p>
+          </a>
+          <br><br>
+          <a class="social-icon3" href="#" target="_blank";>
+            <ion-icon name="logo-twitter" size="large"></ion-icon><p class="twitter">https://twitter.com/starframequadros</p>
+          </a>
+          <br><br>
+          <a class="social-icon4" href="#" target="_blank";>
+            <ion-icon name="logo-whatsapp" size="large"></ion-icon><P class="telefone">(21)99999-9999</P>
+          </a>
+        </div>
+      </div>
   
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      &copy; Todos os direitos reservados 2022.
+  </section>
+
+
+<footer class="container-foot text-center text-white"> <!-- Footer -->
+  
+  <div class="container p-4"> <!-- Grid container -->
+    
+    <section class="col-4 mt-2 text-primary"> <!-- Section: Text -->
+      <p>
+       <strong> Somos uma empresa especializada em vendas de quadros personalizados, com mais de 20 anos de experiência no mercado. Nós siga! </strong>
+      </p>
+    </section> <!-- Section: Text -->
+    
+    
+    <section class="links"> <!-- Section: Links -->
+      
+      <div class="row"> <!--Grid row-->
+        
+        <div id="footerlink" class="col-lg-3 col-md-6 mb-4"> <!--Grid column-->
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="projeto.html" class="text-primary"><strong>Home</strong></a>
+            </li>
+            <li>
+              <a href="contato.html" class="text-primary"><strong>Contato</strong></a>
+            </li>
+            <li>
+              <a href="cadastro.html" class="text-primary"><strong>Cadastro</strong></a>
+            </li>
+          </ul>
+        </div> <!--Grid column-->
+        
+      </div> <!--Grid row-->
+      
+    </section> <!-- Section: Links -->
+    
+  </div> <!-- Grid container -->
+  
+  <section class="mapa"> <!--section Google Maps-->
+    <div id="shoppingmapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.0670406749236!2d-43.46734638503699!3d-22.76289318508516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967f809a644a3%3A0x9c3ec3d5526e1803!2sShopping%20Nova%20Igua%C3%A7u!5e0!3m2!1spt-BR!2sbr!4v1647020642078!5m2!1spt-BR!2sbr" width="400" height="200" loading="lazy"></iframe>
     </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
+  </section>
+
+    <a class="navbar-brand" href="projeto.html"><img src="img/logo3.svg" width="300px" height="230px" alt="" id="logofooter"></a>
+
+  <div class="text-center p-3 text-primary" style="background-color: rgba(0, 0, 0, 0.2);"> <!-- Copyright -->
+    &copy; <strong>Todos os direitos reservados 2022.</strong>
+  </div> <!-- Copyright -->
+  
+</footer> <!-- Footer -->
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-</body>
 
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
