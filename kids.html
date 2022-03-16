@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="css/kids.css" />
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -20,21 +21,21 @@
 
     <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="img/logo3.svg" width="300px" height="130px" alt=""></a> <!--logo do site-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <a class="navbar-brand" href="projeto.html"><img src="img/logo3.svg" width="300px" height="130px" alt=""></a> <!--logo do site-->
+            <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li id="home" style="width: 100px;" class="nav-item">
+                    <li id="home" style="width: 150px;" class="nav-item">
                         <a class="nav-link active text-primary" aria-current="page" href="projeto.html"><strong>Home</strong></a> <!--link direcionando outras paginas-->
                     </li>
-                    <li style="width: 115px;" class="nav-item">
+                    <li id="contato" style="width: 165px;" class="nav-item">
                         <a class="nav-link text-primary" href="contato.html"><strong>Contato</strong></a> <!--link direcionando outras paginas-->
                     </li>
-                    <li style="width: 115px;" class="nav-item">
+                    <li id="cadastro" style="width: 165px;" class="nav-item">
                         <a class="nav-link text-primary" href="cadastro.html"><strong>Cadastro</strong></a> <!--link direcionando outras paginas-->
                     </li>
                     <li class="nav-item dropdown">
@@ -43,14 +44,14 @@
                             <strong>Quadros</strong>
                         </a> <!--link direcionando outras paginas-->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="geek.html">Geek</a></li>
-                            <li><a class="dropdown-item" href="office.html">Office</a></li>
-                            <li><a class="dropdown-item" href="kids.html">Kids</a></li>
-                            <li><a class="dropdown-item" href="room.html">Room</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="geek.html">Geek</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="office.html">Office</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="kids.html">Kids</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="room.html">Room</a></li>
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex">
+                <form class="pesquisar d-flex">
                     <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
                     <button class="btn btn-primary" type="submit">Buscar</button>
                 </form>
@@ -59,6 +60,15 @@
     </nav>
   </div>
   </header>
+
+  <section class="anuncio">
+    <div id="anunciotablet">
+     <strong>Acessando de um tablet? Aqui você encontra diversos quadros para várias ocasiões.</strong> 
+    </div>
+    <div id="anunciocelular">
+      <strong>Acessando de um celular? Aqui você encontra diversos quadros para várias ocasiões.</strong> 
+     </div>
+  </section>
 
   <section class="container">
     
@@ -124,54 +134,54 @@
 
   </section>
 
-<footer class="container-foot text-center text-white"> <!-- Footer -->
+  <footer class="container-foot text-center text-white"> <!-- Footer -->
   
-  <div class="container p-4"> <!-- Grid container -->
-    
-    <section class="col-4 mt-2 text-primary"> <!-- Section: Text -->
-      <p>
-       <strong> Somos uma empresa especializada em vendas de quadros personalizados, com mais de 20 anos de experiência no mercado. Nós siga! </strong>
-      </p>
-    </section> <!-- Section: Text -->
-    
-    
-    <section class="links"> <!-- Section: Links -->
+    <div class="container p-4"> <!-- Grid container -->
       
-      <div class="row"> <!--Grid row-->
-        
-        <div id="footerlink" class="col-lg-3 col-md-6 mb-4"> <!--Grid column-->
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="projeto.html" class="text-primary"><strong>Home</strong></a>
-            </li>
-            <li>
-              <a href="contato.html" class="text-primary"><strong>Contato</strong></a>
-            </li>
-            <li>
-              <a href="cadastro.html" class="text-primary"><strong>Cadastro</strong></a>
-            </li>
-          </ul>
-        </div> <!--Grid column-->
-        
-      </div> <!--Grid row-->
+      <section class="quemsomos col-4 mt-2 text-primary"> <!-- Section: Text -->
+        <p>
+         <strong> Somos uma empresa especializada em vendas de quadros personalizados, com mais de 20 anos de experiência no mercado. Nós siga! </strong>
+        </p>
+      </section> <!-- Section: Text -->
       
-    </section> <!-- Section: Links -->
+      
+      <section class="links"> <!-- Section: Links -->
+        
+        <div class="row"> <!--Grid row-->
+          
+          <div id="footerlink" class="col-lg-3 col-md-6 mb-4"> <!--Grid column-->
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="projeto.html" class="text-primary"><strong>Home</strong></a>
+              </li>
+              <li>
+                <a href="contato.html" class="text-primary"><strong>Contato</strong></a>
+              </li>
+              <li>
+                <a href="cadastro.html" class="text-primary"><strong>Cadastro</strong></a>
+              </li>
+            </ul>
+          </div> <!--Grid column-->
+          
+        </div> <!--Grid row-->
+        
+      </section> <!-- Section: Links -->
+      
+    </div> <!-- Grid container -->
     
-  </div> <!-- Grid container -->
+    <section class="mapa"> <!--section Google Maps-->
+      <div id="shoppingmapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.0670406749236!2d-43.46734638503699!3d-22.76289318508516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967f809a644a3%3A0x9c3ec3d5526e1803!2sShopping%20Nova%20Igua%C3%A7u!5e0!3m2!1spt-BR!2sbr!4v1647020642078!5m2!1spt-BR!2sbr" width="400" height="200" loading="lazy"></iframe>
+      </div>
+    </section>
   
-  <section class="mapa"> <!--section Google Maps-->
-    <div id="shoppingmapa">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.0670406749236!2d-43.46734638503699!3d-22.76289318508516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967f809a644a3%3A0x9c3ec3d5526e1803!2sShopping%20Nova%20Igua%C3%A7u!5e0!3m2!1spt-BR!2sbr!4v1647020642078!5m2!1spt-BR!2sbr" width="400" height="200" loading="lazy"></iframe>
-    </div>
-  </section>
-
-    <img src="img/logo3.svg" width="300px" height="230px" alt="" id="logofooter">
-
-  <div class="text-center p-3 text-primary" style="background-color: rgba(0, 0, 0, 0.2);"> <!-- Copyright -->
-    &copy; <strong>Todos os direitos reservados 2022.</strong>
-  </div> <!-- Copyright -->
+      <a class="navbar-brand" href="projeto.html"><img src="img/logo3.svg" width="300px" height="230px" alt="" id="logofooter"></a>
   
-</footer> <!-- Footer -->
+    <div class="text-center p-3 text-primary" style="background-color: rgba(0, 0, 0, 0.2);"> <!-- Copyright -->
+      &copy; <strong>Todos os direitos reservados 2022.</strong>
+    </div> <!-- Copyright -->
+    
+  </footer> <!-- Footer -->
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

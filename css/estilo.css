@@ -110,7 +110,7 @@ footer #logofooter{
     }
 
     header.container-fluid div.topo nav.navbar div.collapse ul li{ /*HEADER*/
-        margin-left: 10px;
+        margin-left: auto;
         margin-right: -75px;
         /*background-color: blue;*/
     }
@@ -156,7 +156,7 @@ footer #logofooter{
     footer.container-foot section.mapa{ /*FOOTER*/
         margin-left: 500px;
         margin-bottom: 50px;
-        background-color: black;
+        /*background-color: black;*/
     }
 }
 
@@ -179,5 +179,35 @@ footer #logofooter{
         /*background-color: #000000;*/
         margin-left: -10px;
         font-size: 15px;
+    }
+
+    footer.container-foot section.quemsomos{ /*FOOTER*/
+        height: 100px;
+        font-size: 15px;
+        margin-left: 150px;
+        margin-bottom: 10px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.links{ /*FOOTER*/
+        height: 150px;
+        width: 100px;
+        margin-left: 185px;
+        margin-top: 70px;
+        margin-bottom: -70px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot img#logofooter{ /*FOOTER - remoção da logo*/  
+        margin-right: 322px;
+        height: 0px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.mapa{ /*FOOTER - remoção do mapa*/
+        margin-left: 100px;
+        width: 0px;
+        height: 0px;
+        /*background-color: black;*/
     }
 }
