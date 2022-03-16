@@ -15,6 +15,28 @@ header.container-fluid div.collapse{
 	margin-left:50px;
 }
 
+section.anuncio div#anunciotablet{ /*anuncio para tablet*/
+    width: 100%;
+    /*float: left;*/
+    text-align: center;
+    color: #0D6EFD;
+    background-color: #FEEBC2;
+    padding: 5px 0;
+    display: none;
+    margin-top: 30px;
+}
+
+section.anuncio div#anunciocelular{ /*anuncio para tablet*/
+    width: 100%;
+    /*float: left;*/
+    text-align: center;
+    color: #0D6EFD;
+    background-color: #FEEBC2;
+    padding: 5px 0;
+    display: none;
+    margin-top: 30px;
+}
+
 section.container #h4{
     padding-bottom: 40px;
 }
@@ -49,47 +71,113 @@ footer #logofooter{
     padding-bottom: 80px;
 }
 
-@media screen and (max-width:992px) and (min-width:668px){
+@media screen and (max-width:1992px) and (min-width:1468px){
+    
+    header.container-fluid div.topo nav.navbar div.collapse ul li{ /*HEADER*/
+        margin-left: 50px;
+        font-size: 15px;
+        /*background-color: blue;*/
+    }
 
-    header.container-fluid div.topo nav.navbar a{
+    header.container-fluid ul.dropdown-menu a.dropdown-item{ /*HEADER*/
+        /*background-color: blue;*/
+        font-size: 15px;
+    }
+
+    header.container-fluid form.pesquisar{ /*HEADER*/
+        width: 400px;
+        /*background-color: #000000;*/
+        margin-bottom: 9px;
+        margin-left: 50px;
+    }
+
+    footer.container-foot img#logofooter{ /*FOOTER*/
+        margin-right: 805px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.mapa{ /*FOOTER*/
+        margin-right: 230px;
+    }
+}
+
+@media screen and (max-width:992px) and (min-width:778px){
+
+    header.container-fluid div.topo nav.navbar a{ /*HEADER*/
         /*background-color: #000000;*/
         font-size: 15px;
         margin: -15px;
     }
 
-    header.container-fluid div.topo nav.navbar div.collapse ul li{
+    header.container-fluid div.topo nav.navbar div.collapse ul li{ /*HEADER*/
         margin-left: 10px;
         margin-right: -75px;
         /*background-color: blue;*/
     }
 
-    header.container-fluid ul.dropdown-menu a.dropdown-item{
+    section.anuncio div#anunciotablet{ /*Anuncio*/
+        display: block;
+    }
+
+    header.container-fluid ul.dropdown-menu a.dropdown-item{ /*HEADER*/
         /*background-color: blue;*/
         height: 45px;
         font-size: 15px;
     }
 
-    header.container-fluid form.pesquisar{
+    header.container-fluid form.pesquisar{ /*HEADER*/
         width: 200px;
         /*background-color: #000000;*/
         margin-bottom: 9px;
         margin-left: 50px;
     }
+ 
+    footer.container-foot section.quemsomos{ /*FOOTER*/
+        height: 100px;
+        margin-left: -60px;
+        margin-bottom: 10px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.links{ /*FOOTER*/
+        height: 150px;
+        width: 100px;
+        margin-top: 50px;
+        margin-bottom: -60px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot img#logofooter{ /*FOOTER - remoção da logo*/  
+        margin-right: 322px;
+        height: 0px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.mapa{ /*FOOTER*/
+        margin-left: 500px;
+        margin-bottom: 50px;
+        background-color: black;
+    }
 }
 
 @media screen and (max-width:667px){
     
-    header.container-fluid div.topo nav.navbar a{
+    header.container-fluid div.topo nav.navbar a{ /*HEADER*/
         /*background-color: #000000;*/
         margin-left: 130px;
         font-size: 15px;
     }
+
+    section.anuncio div#anunciocelular{ /*Anuncio*/
+        display: block;
+    }
 }
 
-@media screen and (max-width:457px){
+@media screen and (max-width:567px){
    
-   section.container header.topo{
-       float: none;
-       margin: auto;
-   }
+    header.container-fluid div.topo nav.navbar a{ /*HEADER*/
+        /*background-color: #000000;*/
+        margin-left: -10px;
+        font-size: 15px;
+    }
 }
