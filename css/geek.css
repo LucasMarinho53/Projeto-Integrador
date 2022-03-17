@@ -105,6 +105,16 @@
         margin-left: 130px;
     }
 
+    section.container table tr td{
+        font-size: 10px;
+    }
+
+    section.container table tr td img{
+        width: 250px;
+        height: 250px;
+        /*background-color: black;*/
+    }
+
     section.anuncio div#anunciocelular{ /*Anuncio*/
         display: block;
     }
