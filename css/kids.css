@@ -47,6 +47,12 @@
         /*background-color: blue;*/
     }
 
+    header.container-fluid form.nav-item{ /*HEADER*/
+        /*background-color: #000000;*/
+        margin-bottom: 9px;
+        margin-left: 150px;
+    }
+
     section.anuncio div#anunciotablet{ /*Anuncio*/
         display: block;
     }
@@ -98,6 +104,12 @@
         /*background-color: #000000;*/
         margin-left: 130px;
         font-size: 15px;
+    }
+
+    header.container-fluid form.nav-item{ /*HEADER*/
+        /*background-color: #000000;*/
+        margin-bottom: 9px;
+        margin-left: 130px;
     }
 
     section.anuncio div#anunciocelular{ /*Anuncio*/

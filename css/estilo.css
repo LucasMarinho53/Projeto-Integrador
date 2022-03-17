@@ -161,11 +161,10 @@ footer #logofooter{
         font-size: 15px;
     }
 
-    header.container-fluid form.pesquisar{ /*HEADER*/
-        width: 200px;
+    header.container-fluid form.nav-item{ /*HEADER*/
         /*background-color: #000000;*/
         margin-bottom: 9px;
-        margin-left: 50px;
+        margin-left: 150px;
     }
  
     footer.container-foot section.quemsomos{ /*FOOTER*/
@@ -206,6 +205,12 @@ footer #logofooter{
 
     section.anuncio div#anunciocelular{ /*Anuncio*/
         display: block;
+    }
+
+    header.container-fluid form.nav-item{ /*HEADER*/
+        /*background-color: #000000;*/
+        margin-bottom: 9px;
+        margin-left: 130px;
     }
 
     section.container div.row div.text-center img#quadro1{

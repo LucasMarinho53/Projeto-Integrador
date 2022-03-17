@@ -57,11 +57,10 @@
         font-size: 15px;
     }
 
-    header.container-fluid form.pesquisar{ /*HEADER*/
-        width: 200px;
+    header.container-fluid form.nav-item{ /*HEADER*/
         /*background-color: #000000;*/
         margin-bottom: 9px;
-        margin-left: 50px;
+        margin-left: 150px;
     }
  
     footer.container-foot section.quemsomos{ /*FOOTER*/
@@ -98,6 +97,12 @@
         /*background-color: #000000;*/
         margin-left: 130px;
         font-size: 15px;
+    }
+
+    header.container-fluid form.nav-item{ /*HEADER*/
+        /*background-color: #000000;*/
+        margin-bottom: 9px;
+        margin-left: 130px;
     }
 
     section.anuncio div#anunciocelular{ /*Anuncio*/
