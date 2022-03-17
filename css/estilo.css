@@ -37,6 +37,10 @@ section.anuncio div#anunciocelular{ /*anuncio para tablet*/
     margin-top: 30px;
 }
 
+section.container div.quadro img{
+    margin-left: 440px;
+}
+
 section.container #h4{
     padding-bottom: 40px;
 }
@@ -117,6 +121,38 @@ footer #logofooter{
 
     section.anuncio div#anunciotablet{ /*Anuncio*/
         display: block;
+    }
+
+    section.container div.row div.text-center img#quadro1{
+        /*background-color: black;*/
+        width: 130px;
+        margin-right: -15px;
+    }
+
+    section.container div.row div.text-center img#quadro2{
+        /*background-color: black;*/
+        width: 130px;
+        margin-right: -10px;
+    }
+
+    section.container div.row div.text-center img#quadro3{
+        /*background-color: black;*/
+        width: 130px;
+        margin-left: -65px;
+    }
+
+    section.container div.col-4 h4{
+        font-size: 15px;
+    }
+
+    section.container div.quadro img{
+        width: 250px;
+        height: 250px;
+        margin-left: 220px;
+    }
+
+    section.container div#h4 h4{
+        font-size: 17px;
     }
 
     header.container-fluid ul.dropdown-menu a.dropdown-item{ /*HEADER*/
