@@ -207,6 +207,62 @@ footer #logofooter{
     section.anuncio div#anunciocelular{ /*Anuncio*/
         display: block;
     }
+
+    section.container div.row div.text-center img#quadro1{
+        /*background-color: black;*/
+        width: 100px;
+        margin-right: -45px;
+    }
+
+    section.container div.row div.text-center img#quadro2{
+        /*background-color: black;*/
+        width: 100px;
+        margin-right: -40px;
+    }
+
+    section.container div.row div.text-center img#quadro3{
+        /*background-color: black;*/
+        width: 100px;
+        margin-left: -95px;
+    }
+
+    section.container div.col-4 h4{
+        font-size: 14px;
+    }
+
+    section.container div.quadro img{
+        width: 230px;
+        height: 230px;
+        margin-left: 140px;
+    }
+
+    section.container div#h4 h4{
+        font-size: 16px;
+    }
+
+    footer.container-foot section.mapa{ /*FOOTER remoção do mapa*/
+        margin-left: -1500px;
+        margin-bottom: 50px;
+        width: 0px;
+        height: 0px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.quemsomos{ /*FOOTER*/
+        height: 50px;
+        margin-left: 170px;
+        margin-bottom: 0px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.links{ /*FOOTER*/
+        height: 50px;
+        width: 100px;
+        margin-top: 130px;
+        margin-bottom: 0px;
+        margin-left: 200px;
+        /*background-color: black;*/
+    }
 }
 
 @media screen and (max-width:567px){
