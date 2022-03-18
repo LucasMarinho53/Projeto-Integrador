@@ -10,6 +10,8 @@ CREATE TABLE Cliente (
  Celular INT
 ); 
 
+SELECT * FROM Cliente;
+
 CREATE TABLE login_cliente(
  Email VARCHAR(150),
  Senha VARCHAR(150)
