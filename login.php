@@ -62,7 +62,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 
     <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="projeto.html"><img src="img/logo3.svg" width="300px" height="130px" alt=""></a> <!--logo do site-->
+            <a class="navbar-brand" href="projeto.html"><img src="img/logo3.svg" width="300px" height="130px" alt="logo da empresa. quadro branco com SF | Star Frame pintado em azul centralizado."></a> <!--logo do site-->
             <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -111,10 +111,10 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
        </div>
     <div class="carousel-inner"> <!--colocar banner foto combinando height-->
       <div class="carousel-item active">
-        <img src="img/decorando-com-quadros.webp" class="d-block w-100" alt="...">
+        <img src="img/decorando-com-quadros.webp" class="d-block w-100" alt="diversos quadros expostos numa parede sobre uma escada com os dizeres em preto no canto da imagem: decorando com quadros.">
       </div>
       <div class="carousel-item"> <!--colocar banner foto combinando height-->
-        <img src="img/banner5.jpeg" class="d-block w-100" alt="...">
+        <img src="img/banner5.jpeg" class="d-block w-100" alt="quadro abstrato tons de cinza e branco acima de uma cama de casal, pendurado numa parede pastel.">
       </div><!--observação: Parcialmente feito-->
       
     </div>
@@ -198,7 +198,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
       </div>
     </section>
   
-      <a class="navbar-brand" href="projeto.html"><img src="img/logo3.svg" width="300px" height="230px" alt="" id="logofooter"></a>
+      <a class="navbar-brand" href="projeto.html"><img src="img/logo3.svg" width="300px" height="230px" alt="logo da empresa. quadro branco com SF | Star Frame pintado em azul centralizado." id="logofooter"></a>
   
     <div class="text-center p-3 text-primary" style="background-color: rgba(0, 0, 0, 0.2);"> <!-- Copyright -->
       &copy; <strong>Todos os direitos reservados 2022.</strong>
