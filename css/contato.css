@@ -26,6 +26,10 @@
     text-decoration: none;
 }
 
+section.container div.col-4 h4{
+    font-size: 23px;
+}
+
 @media screen and (max-width:1992px) and (min-width:1468px){
     
     header.container-fluid div.topo nav.navbar div.collapse ul li{ /*HEADER*/
@@ -74,6 +78,18 @@
         display: block;
     }
 
+    hr.dropdown-divider{
+        display: none;
+    }
+
+    div.text-center{
+        display: flex;
+    }
+
+    div.text-center img.rounded.float-end{
+        display: none;
+    }
+
     header.container-fluid ul.dropdown-menu a.dropdown-item{ /*HEADER*/
         /*background-color: blue;*/
         height: 45px;
@@ -88,7 +104,8 @@
  
     footer.container-foot section.quemsomos{ /*FOOTER*/
         height: 100px;
-        margin-left: -60px;
+        margin-left: -10px;
+        margin-top: 30px;
         margin-bottom: 10px;
         /*background-color: black;*/
     }
@@ -96,6 +113,7 @@
     footer.container-foot section.links{ /*FOOTER*/
         height: 150px;
         width: 100px;
+        margin-left: 84px;
         margin-top: 50px;
         margin-bottom: -60px;
         /*background-color: black;*/
@@ -130,6 +148,10 @@
 
     section.anuncio div#anunciocelular{ /*Anuncio*/
         display: block;
+    }
+
+    hr.dropdown-divider{
+        display: none;
     }
 }
 
