@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header.container-fluid{
+    background-color: #FEEBC2;
+}
+
+section.container header.topo nav.navbar{
+    height: auto;
+}
+
+header.container-fluid div.collapse{
+	margin-left:50px;
+}
+
+section.formcadastro div.container legend{
+    margin-top: 20px;
+    text-align: center;
+    color: #0D82EE;
+}
+
+section.formcadastro div.container div{
+    margin-top: 20px;
+    color: #0D82EE;
+}
+
+section.formcadastro div.container button{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+section.anuncio div#anunciotablet{ /*anuncio para tablet*/
+    width: 100%;
+    /*float: left;*/
+    text-align: center;
+    color: #0D6EFD;
+    background-color: #FEEBC2;
+    padding: 5px 0;
+    display: none;
+    margin-top: 30px;
+}
+
+section.anuncio div#anunciocelular{ /*anuncio para tablet*/
+    width: 100%;
+    /*float: left;*/
+    text-align: center;
+    color: #0D6EFD;
+    background-color: #FEEBC2;
+    padding: 5px 0;
+    display: none;
+    margin-top: 30px;
+}
+
+footer.container-foot{
+    background-color: #FEEBC2;
+}
+
+section.links #footerlink{
+    width: 400px;
+    height: 80px;
+    /*background-color: #000;*/
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+section.mapa #shoppingmapa{
+    width: 400px;
+    height: 200px;
+    /*background-color: #000;*/
+    float: right;
+    margin-top: -220px;
+    margin-right: 100px;
+}
+
+footer #logofooter{
+    float: right;
+    /*background-color: #000;*/
+    margin-top: -220px;
+    margin-right: 600px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width:1992px) and (min-width:1468px){
+    
+    header.container-fluid div.topo nav.navbar div.collapse ul li{ /*HEADER*/
+        margin-left: 50px;
+        font-size: 15px;
+        /*background-color: blue;*/
+    }
+
+    header.container-fluid ul.dropdown-menu a.dropdown-item{ /*HEADER*/
+        /*background-color: blue;*/
+        font-size: 15px;
+    }
+
+    header.container-fluid form.pesquisar{ /*HEADER*/
+        width: 400px;
+        /*background-color: #000000;*/
+        margin-bottom: 9px;
+        margin-left: 50px;
+    }
+
+    footer.container-foot img#logofooter{ /*FOOTER*/
+        margin-right: 805px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.mapa{ /*FOOTER*/
+        margin-right: 230px;
+    }
+}
+
+@media screen and (max-width:992px) and (min-width:778px){
+
+    header.container-fluid div.topo nav.navbar a{ /*HEADER*/
+        /*background-color: #000000;*/
+        font-size: 15px;
+        margin: -15px;
+    }
+
+    header.container-fluid div.topo nav.navbar div.collapse ul li{ /*HEADER*/
+        margin-left: auto;
+        margin-right: -75px;
+        /*background-color: blue;*/
+    }
+
+    section.anuncio div#anunciotablet{ /*Anuncio*/
+        display: block;
+    }
+
+    header.container-fluid ul.dropdown-menu a.dropdown-item{ /*HEADER*/
+        /*background-color: blue;*/
+        height: 45px;
+        font-size: 15px;
+    }
+
+    header.container-fluid form.nav-item{ /*HEADER*/
+        /*background-color: #000000;*/
+        margin-bottom: 9px;
+        margin-left: 150px;
+    }
+ 
+    footer.container-foot section.quemsomos{ /*FOOTER*/
+        height: 100px;
+        margin-left: -60px;
+        margin-bottom: 10px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.links{ /*FOOTER*/
+        height: 150px;
+        width: 100px;
+        margin-top: 50px;
+        margin-bottom: -60px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot img#logofooter{ /*FOOTER - remoção da logo*/  
+        margin-right: 322px;
+        height: 0px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.mapa{ /*FOOTER*/
+        margin-left: 500px;
+        margin-bottom: 50px;
+        /*background-color: black;*/
+    }
+}
+
+@media screen and (max-width:667px){
+    
+    header.container-fluid div.topo nav.navbar a{ /*HEADER*/
+        /*background-color: #000000;*/
+        margin-left: 130px;
+        font-size: 15px;
+    }
+
+    section.anuncio div#anunciocelular{ /*Anuncio*/
+        display: block;
+    }
+
+    header.container-fluid form.nav-item{ /*HEADER*/
+        /*background-color: #000000;*/
+        margin-bottom: 9px;
+        margin-left: 130px;
+    }
+
+    footer.container-foot section.mapa{ /*FOOTER remoção do mapa*/
+        margin-left: -1500px;
+        margin-bottom: 50px;
+        width: 0px;
+        height: 0px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.quemsomos{ /*FOOTER*/
+        height: 50px;
+        margin-left: 170px;
+        margin-bottom: 0px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.links{ /*FOOTER*/
+        height: 50px;
+        width: 100px;
+        margin-top: 130px;
+        margin-bottom: 0px;
+        margin-left: 200px;
+        /*background-color: black;*/
+    }
+}
+
+@media screen and (max-width:567px){
+   
+    header.container-fluid div.topo nav.navbar a{ /*HEADER*/
+        /*background-color: #000000;*/
+        margin-left: -10px;
+        font-size: 15px;
+    }
+
+    footer.container-foot section.quemsomos{ /*FOOTER*/
+        height: 100px;
+        font-size: 15px;
+        margin-left: 150px;
+        margin-bottom: 10px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.links{ /*FOOTER*/
+        height: 150px;
+        width: 100px;
+        margin-left: 185px;
+        margin-top: 70px;
+        margin-bottom: -70px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot img#logofooter{ /*FOOTER - remoção da logo*/  
+        margin-right: 322px;
+        height: 0px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.mapa{ /*FOOTER - remoção do mapa*/
+        margin-left: 100px;
+        width: 0px;
+        height: 0px;
+        /*background-color: black;*/
+    }
+}

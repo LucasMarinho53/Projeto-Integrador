@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-    <link rel="stylesheet" type="text/css" href="css/geek.css" />
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css" />
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -53,7 +53,7 @@
                   data-bs-toggle="dropdown" aria-expanded="false">Entrar</button>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" style="background: none;" href="cadastro.php">Cadastro</a></li>
-                    <li><a class="dropdown-item" style="background: none;" href="office.html">Login</a></li>
+                    <li><a class="dropdown-item" style="background: none;" href="login.html">Login</a></li>
                 </ul>
                 </form>
             </div>
@@ -62,28 +62,28 @@
   </div>
   </header>
 
-<section>
+<section class="formcadastro">
 <div class="container">
         <fieldset>
-            <legend>Cadastro de Clientes</legend>
+            <legend><strong>Faça seu cadastro aqui!</strong></legend>
             <form action="cadastrar-cliente.php" method="post">
             <div class="form-group">
-                <label for="nome_id">Nome</label>
-                <input class="form-control" type="text" name="nome" id="nome_id" placeholder="informe o nome">
+                <label for="nome_id"><strong>Nome</strong></label>
+                <input class="form-control" type="text" name="nome" id="nome_id" placeholder="Digite seu nome">
             </div>
             <div class="form-group">
-                <label for="email_id">Email</label>
-                <input class="form-control" type="email" name="email" id="email_id" placeholder="informe o email">
+                <label for="email_id"><strong>Email</strong></label>
+                <input class="form-control" type="email" name="email" id="email_id" placeholder="Digite seu email">
             </div>
             <div class="form-group">
-                <label for="senha_id">Senha</label>
+                <label for="senha_id"><strong>Senha</strong></label>
                 <input class="form-control" type="text" name="senha" id="senha_id" placeholder="Digite sua senha">
             </div>
             <div class="form-group">
-                <label for="cpf_id">CPF</label>
-                <input class="form-control" type="text" name="cpf" id="cpf_id" placeholder="Digite sua senha">
+                <label for="cpf_id"><strong>CPF</strong></label>
+                <input class="form-control" type="text" name="cpf" id="cpf_id" placeholder="Digite seu cpf">
             </div>
-            <button class="btn btn-dark" type="submit" class>Enviar</button>
+            <button class="btn btn-primary" type="submit" class>Enviar</button>
             </form>
         </fieldset>
     </div>
