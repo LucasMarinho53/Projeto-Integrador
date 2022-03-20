@@ -1,3 +1,44 @@
+<?php
+include('db.conn.php');
+
+if(isset($_POST['email']) || isset($_POST['senha'])) {
+
+    if(strlen($_POST['email']) == 0) {
+        echo "Preencha seu e-mail";
+    } else if(strlen($_POST['senha']) == 0) {
+        echo "Preencha sua senha";
+    } else {
+
+        $Email = $mysqli->real_escape_string($_POST['email']);
+        $Senha = $mysqli->real_escape_string($_POST['senha']);
+
+        $sql_code = "SELECT * FROM Cliente WHERE email = '$Email' AND senha = '$Senha'";
+        $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
+
+        $quantidade = $sql_query->num_rows;
+
+        if($quantidade == 1) {
+            
+            $usuario = $sql_query->fetch_assoc();
+
+            if(!isset($_SESSION)) {
+                session_start();
+            }
+
+            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['nome'] = $usuario['nome'];
+
+            header("Location: profile.php");
+
+        } else {
+            echo "Falha ao logar! E-mail ou senha incorretos";
+        }
+
+    }
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,12 +46,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-    <link rel="stylesheet" type="text/css" href="css/office.css" />
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Star Frame Office</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <title>Star Frame</title>
 </head>
 
 <body>
@@ -49,19 +90,44 @@
                     </li>
                 </ul>
                 <form class="nav-item dropdown" style="margin-right: 330px;">
-                  <button class="btn btn-primary" id="navbarDropdown" role="button" 
-                  data-bs-toggle="dropdown" aria-expanded="false">Entrar</button>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" style="background: none;" href="cadastro.php">Cadastro</a></li>
-                    <li><a class="dropdown-item" style="background: none;" href="login.php">Login</a></li>
-                </ul>
+                    <button class="btn btn-primary" id="navbarDropdown" role="button" 
+                    data-bs-toggle="dropdown" aria-expanded="false">Entrar</button>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" style="background: none;" href="cadastro.php">Cadastro</a></li>
+                      <li><a class="dropdown-item" style="background: none;" href="office.html">Login</a></li>
+                  </ul>
                 </form>
+                
             </div>
         </div>
     </nav>
   </div>
   </header>
 
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> <!--colocar banner foto combinando height-->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       </div>
+    <div class="carousel-inner"> <!--colocar banner foto combinando height-->
+      <div class="carousel-item active">
+        <img src="img/decorando-com-quadros.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item"> <!--colocar banner foto combinando height-->
+        <img src="img/banner5.jpeg" class="d-block w-100" alt="...">
+      </div><!--observação: Parcialmente feito-->
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+			
   <section class="anuncio">
     <div id="anunciotablet">
      <strong>Acessando de um tablet? Aqui você encontra diversos quadros para várias ocasiões.</strong> 
@@ -71,69 +137,25 @@
      </div>
   </section>
 
-  <section class="container">
-    
-    <table>
-      <tr>
-        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="" src='img/OFFICE/office1.jfif'/></td>
-        
-        <td style="padding-left: 30px;">
-        
-        <h2>R$ 70,99 </h2> </h6>2x sem juros</h6>
-      </br>
-        <h5>Quadros Abstratos </h5> </h6>Tamanho do Quadro(s): 30x42 </h6>
-      
-      </td>
-      </tr>
-     
-    </table>
-
-    <table>
-      <tr>
-        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="" src='img/OFFICE/office2.webp'/></td>
-        
-        <td style="padding-left: 30px;">
-        
-        <h2>R$ 59,99 </h2> </h6>2x sem juros</h6>
-      </br>
-        <h5>Quadros especiais - Combinação de Cores</h5> </h6>Tamanho do Quadro(s): 42x60 </h6>
-      
-      </td>
-      </tr>
-     
-    </table>
-
-    <table>
-      <tr>
-        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="" src='img/OFFICE/office3.webp'/></td>
-        
-        <td style="padding-left: 30px;">
-        
-        <h2>R$ 45,99 </h2> </h6>2x sem juros</h6>
-      </br>
-        <h5>Quadro Flores em Preto e Branco</h5> </h6>Tamanho do Quadro(s): 50x70 </h6>
-      
-      </td>
-      </tr>
-     
-    </table>
-
-   <table>
-      <tr>
-        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="" src='img/OFFICE/office4.webp'/></td>
-        
-        <td style="padding-left: 30px;">
-        
-        <h2>R$ 85,99 </h2> </h6>2x sem juros</h6>
-      </br>
-        <h5>Quadros Conceitos Abstratos </h5> </h6>Tamanho do Quadro(s): 42x60 </h6>
-      
-      </td>
-      </tr>
-     
-    </table>
-
-  </section>
+  <div class="d-flex justify-content-center align-itens-center">
+  <form class="p-5 rounded shadow" action="" method="post" style="width: 30rem;">
+    <h2 class="text-center pb-5 display-4">Login</h2>
+    <?php if (isset($_GET['error'])) { ?>
+      <div class="alert alert-danger" role="alert">
+        <?=$_GET['error']?>
+    </div>
+    <?php } ?>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Senha</label>
+    <input type="password" name="senha" class="form-control" id="exampleInputPassword1">
+  </div>
+  <button type="submit" class="btn btn-primary">Logar</button>
+</form>
+</div>
 
   <footer class="container-foot text-center text-white"> <!-- Footer -->
   
@@ -160,9 +182,6 @@
               </li>
               <li>
                 <a href="cadastro.php" class="text-primary"><strong>Cadastro</strong></a>
-              </li>
-              <li>
-                <a href="login.php" class="text-primary"><strong>Login</strong></a>
               </li>
             </ul>
           </div> <!--Grid column-->
@@ -191,5 +210,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
