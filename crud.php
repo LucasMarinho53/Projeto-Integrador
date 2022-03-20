@@ -2,14 +2,12 @@
     require_once('.\conexao.php');
 
     # vai retornar true se cadastrar e false se ocorrer uma falha
-    function fnAddCliente($Nome, $Email, $Senha, $Telefone, $Celular, $CPF, $CEP, $Numero, $Complemento) {
+    function fnAddCliente($Nome, $Email, $Senha, $CPF) {
         # pega a conexão
         $link = getConnection();
 
         # define a query
-        $query = "insert into Cliente(CPF, Nome) values ('{$CPF}', '{$Nome}', '{$Telefone}'), '{$Celular}'";
-        $query = "insert into login_cliente(Email, Senha) values ('{$Email}', '{$Senha}'";
-        $query = "insert into Endereco(Numero, Complemento, CEP) values ('{$Numero}', '{$Complemento}', '{$CEP}'";
+        $query = "insert into Cliente(nome, email, senha, cpf) values ('{$Nome}', '{$Email}', '{$Senha}', '{$CPF}')";
 
         # mysqli_query executa a query no banco
         # retorna true|false - false quando tem erros e true não quando não tem erros
@@ -28,18 +26,18 @@
     {
         $link = getConnection();
 
-        $query = "select * from Clientes";
+        $query = "select * from Cliente";
 
         $result = mysqli_query($link, $query);
 
-        $Clientes = array();
+        $clientes = array();
 
         while($row = mysqli_fetch_assoc($result))
         {
-            array_push($Clientes, $row);
+            array_push($clientes, $row);
         }
 
-        return $Clientes;
+        return $clientes;
     }
 
 

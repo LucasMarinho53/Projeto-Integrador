@@ -52,7 +52,7 @@
                   <button class="btn btn-primary" id="navbarDropdown" role="button" 
                   data-bs-toggle="dropdown" aria-expanded="false">Entrar</button>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" style="background: none;" href="cadastro.html">Cadastro</a></li>
+                    <li><a class="dropdown-item" style="background: none;" href="cadastro.php">Cadastro</a></li>
                     <li><a class="dropdown-item" style="background: none;" href="office.html">Login</a></li>
                 </ul>
                 </form>
@@ -63,60 +63,30 @@
   </header>
 
 <section>
-  <main>
-    <h1>Criando minha Conta</h1>
-    <div class="social-media" style="margin-top: 30px;">
-    <form action="" style="margin-top: 50px; ">
-        
-      <label for="name" style= "display: block; padding-left: 20px;" >
-            <span><h6>Nome</h6></span>
-            <input type="text" id="name" name="name">
-      </label>
-
-      <label for="email" style= "display: block; margin-top: 30px; padding-left: 20px;">
-            <span><h6>E-mail</h6></span>
-            <input type="email" id="email" name="email">
-      </label>
-
-      <label for="password" style= "display: block; margin-top: 30px; padding-left: 20px;">
-            <span><h6>Senha</h6></span>
-            <input type="password" id="password" name="password">
-      </label>
-
-      <label for="name" style= "display: block; margin-top: 30px; padding-left: 20px;" >
-          <span><h6>Telefone</h6></span>
-          <input type="text" id="text" name="text">
-      </label>
-
-      <label for="email" style= "display: block; margin-top: 30px; padding-left: 20px;">
-          <span><h6>Celular</h6></span>
-          <input type="email" id="email" name="email">
-      </label>
-
-      <label for="password"style= "display: block; margin-top: 30px; padding-left: 20px;">
-          <span><h6>CPF</h6></span>
-          <input type="text" id="text" name="text">
-      </label>
-
-      <label for="name" style= "display: block; margin-top: 30px; padding-left: 20px;" >
-        <span><h6>CEP</h6></span>
-        <input type="text" id="text" name="text">
-    </label>
-
-    <label for="email"style= "display: block; margin-top: 30px; padding-left: 20px;">
-        <span> <h6>Nº da Casa</h6></span>
-        <input type="text" id="text" name="text">
-    </label>
-
-    <label for="password" style= "display: block; margin-top: 30px; padding-left: 20px;">
-        <span><h6>Complemento</h6></span>
-        <input type="text" id="text" name="text">
-    </label>
-      
-
-        <input type="submit" value="Cadastrar" id="button" style="margin-top: 50px; margin: 30px;">
-    </form>
-</main>
+<div class="container">
+        <fieldset>
+            <legend>Cadastro de Clientes</legend>
+            <form action="cadastrar-cliente.php" method="post">
+            <div class="form-group">
+                <label for="nome_id">Nome</label>
+                <input class="form-control" type="text" name="nome" id="nome_id" placeholder="informe o nome">
+            </div>
+            <div class="form-group">
+                <label for="email_id">Email</label>
+                <input class="form-control" type="email" name="email" id="email_id" placeholder="informe o email">
+            </div>
+            <div class="form-group">
+                <label for="senha_id">Senha</label>
+                <input class="form-control" type="text" name="senha" id="senha_id" placeholder="Digite sua senha">
+            </div>
+            <div class="form-group">
+                <label for="cpf_id">CPF</label>
+                <input class="form-control" type="text" name="cpf" id="cpf_id" placeholder="Digite sua senha">
+            </div>
+            <button class="btn btn-dark" type="submit" class>Enviar</button>
+            </form>
+        </fieldset>
+    </div>
 </section>
 
   <footer class="container-foot text-center text-white" > <!-- Footer -->
@@ -143,7 +113,7 @@
                 <a href="contato.html" class="text-primary"><strong>Contato</strong></a>
               </li>
               <li>
-                <a href="cadastro.html" class="text-primary"><strong>Cadastro</strong></a>
+                <a href="cadastro.php" class="text-primary"><strong>Cadastro</strong></a>
               </li>
             </ul>
           </div> <!--Grid column-->
