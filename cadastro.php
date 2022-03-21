@@ -77,7 +77,7 @@
             </div>
             <div class="form-group">
                 <label for="senha_id"><strong>Senha</strong></label>
-                <input class="form-control" type="text" name="senha" id="senha_id" placeholder="Digite sua senha">
+                <input class="form-control" type="password" name="senha" id="senha_id" placeholder="Digite sua senha">
             </div>
             <div class="form-group">
                 <label for="cpf_id"><strong>CPF</strong></label>
