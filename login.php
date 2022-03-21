@@ -1,44 +1,3 @@
-<?php
-include('db.conn.php');
-
-if(isset($_POST['email']) || isset($_POST['senha'])) {
-
-    if(strlen($_POST['email']) == 0) {
-        echo "Preencha seu e-mail";
-    } else if(strlen($_POST['senha']) == 0) {
-        echo "Preencha sua senha";
-    } else {
-
-        $Email = $mysqli->real_escape_string($_POST['email']);
-        $Senha = $mysqli->real_escape_string($_POST['senha']);
-
-        $sql_code = "SELECT * FROM Cliente WHERE email = '$Email' AND senha = '$Senha'";
-        $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
-
-        $quantidade = $sql_query->num_rows;
-
-        if($quantidade == 1) {
-            
-            $usuario = $sql_query->fetch_assoc();
-
-            if(!isset($_SESSION)) {
-                session_start();
-            }
-
-            $_SESSION['id'] = $usuario['id'];
-            $_SESSION['nome'] = $usuario['nome'];
-
-            header("Location: profile.php");
-
-        } else {
-            echo "Falha ao logar! E-mail ou senha incorretos";
-        }
-
-    }
-
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -94,7 +53,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
                     data-bs-toggle="dropdown" aria-expanded="false">Entrar</button>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" style="background: none;" href="cadastro.php">Cadastro</a></li>
-                      <li><a class="dropdown-item" style="background: none;" href="office.html">Login</a></li>
+                      <li><a class="dropdown-item" style="background: none;" href="login.php">Login</a></li>
                   </ul>
                 </form>
                 
@@ -137,25 +96,23 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
      </div>
   </section>
 
-  <div class="d-flex justify-content-center align-itens-center">
-  <form class="p-5 rounded shadow" action="" method="post" style="width: 30rem;">
-    <h2 class="text-center pb-5 display-4">Login</h2>
-    <?php if (isset($_GET['error'])) { ?>
-      <div class="alert alert-danger" role="alert">
-        <?=$_GET['error']?>
-    </div>
-    <?php } ?>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email</label>
-    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  <div class="center">
+      <h1>Login</h1>
+      <form method="post" action="login-cliente.php">
+          <div class="txt_field">
+              <input type="text" required>
+              <label>E-mail</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" required>
+            <label>Senha</label>
+        </div>
+        <input id="botaoentrar" type="submit" value="Entrar">
+        <div class="signup_link">
+            Não tem conta? <a href="cadastro.html">Cadastre-se</a>
+        </div>
+      </form>
   </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Senha</label>
-    <input type="password" name="senha" class="form-control" id="exampleInputPassword1">
-  </div>
-  <button type="submit" class="btn btn-primary">Logar</button>
-</form>
-</div>
 
   <footer class="container-foot text-center text-white"> <!-- Footer -->
   
