@@ -96,23 +96,25 @@
      </div>
   </section>
 
-  <div class="center">
-      <h1>Login</h1>
-      <form method="post" action="login-cliente.php">
-          <div class="txt_field">
-              <input type="text" required>
-              <label>E-mail</label>
-          </div>
-          <div class="txt_field">
-            <input type="password" required>
-            <label>Senha</label>
-        </div>
-        <input id="botaoentrar" type="submit" value="Entrar">
-        <div class="signup_link">
-            Não tem conta? <a href="cadastro.html">Cadastre-se</a>
-        </div>
-      </form>
+  <div class="d-flex justify-content-center align-itens-center">
+  <form class="p-5 rounded shadow" action="login-client.php" method="post" style="width: 30rem;">
+    <h2 class="text-center pb-5 display-4">Login</h2>
+    <?php if (isset($_GET['error'])) { ?>
+      <div class="alert alert-danger" role="alert">
+        <?=$_GET['error']?>
+    </div>
+    <?php } ?>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Senha</label>
+    <input type="password" name="senha" class="form-control" id="exampleInputPassword1">
+  </div>
+  <button type="submit" class="btn btn-primary">Logar</button>
+</form>
+</div>
 
   <footer class="container-foot text-center text-white"> <!-- Footer -->
   
