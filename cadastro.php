@@ -65,6 +65,8 @@
 <section class="formcadastro">
 <div class="container">
         <fieldset>
+          <?php if(isset($_GET['Message'])){
+                  echo $_GET['Message'];} ?>
             <legend><strong>Faça seu cadastro aqui!</strong></legend>
             <form action="cadastrar-cliente.php" method="post">
             <div class="form-group">
