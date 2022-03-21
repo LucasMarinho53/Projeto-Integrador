@@ -97,7 +97,7 @@
   </section>
 
   <div class="d-flex justify-content-center align-itens-center">
-  <form class="p-5 rounded shadow" action="login-client.php" method="post" style="width: 30rem;">
+  <form class="p-5 rounded shadow" action="login-cliente.php" method="post" style="width: 30rem;">
     <h2 class="text-center pb-5 display-4">Login</h2>
     <?php if (isset($_GET['error'])) { ?>
       <div class="alert alert-danger" role="alert">
