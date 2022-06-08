@@ -1,29 +1,5 @@
 <?php
-
-    session_start();
-
-include('db.conn.php');
-    $itens = array(
- 		['nome' => 'Quadro - Fantasminhas do Pac-man', 'preco' => 'R$ 80,99'],
- 		['nome' => 'Quadro - Super Mario Bros', 'preco' => 'R$ 96,99'],
-    );
-
-    if(isset($_GET['adicionar'])){
-      $idProduto = (int) $_GET['adicionar'];
-
-      if(isset($itens[$idProduto])){
-          if(isset($_SESSION['carrinho'][$idProduto])){
-            $_SESSION['carrinho'][$idProduto]['quantidade']++;
-          }else{
-            $_SESSION['carrinho'][$idProduto] = array('quantidade'=>1,
-             'nome'=>$itens[$idProduto]['nome'], 'preco'=>$itens[$idProduto]['preco']);
-          }
-          echo '<script>alert("O item foi adicionado ao carrinho.")</script>';
-        }else{
-          die('O item esta indisponivel no momento');
-        }
-    }
-
+include ('geekcarrinho.php');
 ?>
 
 <!DOCTYPE html>
@@ -110,7 +86,7 @@ include('db.conn.php');
         <h2>R$ 80,99 </h2> </h6>2x sem juros</h6> 
       </br>
         <h5>Quadro - Fantasminhas do Pac-man</h5> </h6>Tamanho do Quadro(s): 42x60 </h6>
-        <a href="?adicionar=<php echo $key ?">Adicionar ao carrinho!</a>
+        <a href="?adicionar=0<php echo $key ?">Adicionar ao carrinho!</a>
       </td>
       </tr>
      
@@ -125,7 +101,7 @@ include('db.conn.php');
         <h2>R$ 96,99 </h2> </h6>2x sem juros</h6>
       </br>
         <h5>Quadro - Super Mario Bros</h5> </h6>Tamanho do Quadro(s): 60x90 </h6>
-      
+        <a href="?adicionar=1<php echo $key ?">Adicionar ao carrinho!</a>
       </td>
       </tr>
      

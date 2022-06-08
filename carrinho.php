@@ -1,6 +1,10 @@
 <?php
-    include('geek.php');
+    
+    include ('geekcarrinho.php');
+
     foreach ($_SESSION['carrinho'] as $key => $value){
-        echo '<p>Nome: '.$value['nome'].' | Quantidade: '.$value['quantidade'].' | Preço: '.($value['quantidade']*$value['preco']).'</p>';
+        echo $value['nome'] . '<br>';
+        echo $value['preco'] . '<br>';
+        echo $value['quantidade'] . '<br>';
     }
 ?>
