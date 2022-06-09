@@ -1,3 +1,7 @@
+<?php
+    include ('roomcarrinho.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,11 +10,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-    <link rel="stylesheet" type="text/css" href="css/office.css" />
+    <link rel="stylesheet" type="text/css" href="css/room.css" />
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Star Frame Office</title>
+    <title>Star Frame Room</title>
 </head>
 
 <body>
@@ -75,14 +79,14 @@
     
     <table>
       <tr>
-        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="Quadros Abstratos - Formas geométricas amarelas pretas e cinzas em diferentes arranjos." src='img/OFFICE/office1.jfif'/></td>
+        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="Quadros - Parque Central - 3 quadros mostrando uma paisagem cinza de um campo com uma grande árvore verde no quadro do meio." src='img/ROOM/room1.webp'/></td>
         
         <td style="padding-left: 30px;">
         
-        <h2>R$ 70,99 </h2> </h6>2x sem juros</h6>
+        <h2>R$ 80,99 </h2> </h6>2x sem juros</h6>
       </br>
-        <h5>Quadros Abstratos </h5> </h6>Tamanho do Quadro(s): 30x42 </h6>
-      
+        <h5>Quadros - Parque Central</h5> </h6>Tamanho do Quadro(s): 30x42 </h6>
+        <a href="?adicionar=0<php echo $key ?">Adicionar ao carrinho!</a>
       </td>
       </tr>
      
@@ -90,14 +94,14 @@
 
     <table>
       <tr>
-        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="Quadros especiais - Combinação de Cores - Quadro com preto e amarelo disputando o espaço nele e outro com branco e amarelo fazendo a mesma coisa." src='img/OFFICE/office2.webp'/></td>
+        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="Quadros - Na Beira da Praia - Visão do por do sol visto de uma praia com rochas e areia." src='img/ROOM/room2.webp'/></td>
         
         <td style="padding-left: 30px;">
         
-        <h2>R$ 59,99 </h2> </h6>2x sem juros</h6>
+        <h2>R$ 96,99 </h2> </h6>2x sem juros</h6>
       </br>
-        <h5>Quadros especiais - Combinação de Cores</h5> </h6>Tamanho do Quadro(s): 42x60 </h6>
-      
+        <h5>Quadros - Na Beira da Praia</h5> </h6>Tamanho do Quadro(s): 50x70 </h6>
+        <a href="?adicionar=1<php echo $key ?">Adicionar ao carrinho!</a>
       </td>
       </tr>
      
@@ -105,14 +109,14 @@
 
     <table>
       <tr>
-        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="Quadro Flores em Preto e Branco" src='img/OFFICE/office3.webp'/></td>
+        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="3 quadros que compoem um por do sol visto de uma leve elevação com o mar e o sol se encontrando no horizonte." src='img/ROOM/room3.webp'/></td>
         
         <td style="padding-left: 30px;">
         
-        <h2>R$ 45,99 </h2> </h6>2x sem juros</h6>
+        <h2>R$ 67,99 </h2> </h6>2x sem juros</h6>
       </br>
-        <h5>Quadro Flores em Preto e Branco</h5> </h6>Tamanho do Quadro(s): 50x70 </h6>
-      
+        <h5>Quadros - Por do Sol</h5> </h6>Tamanho do Quadro(s): 30x42 </h6>
+        <a href="?adicionar=2<php echo $key ?">Adicionar ao carrinho!</a>
       </td>
       </tr>
      
@@ -120,14 +124,14 @@
 
    <table>
       <tr>
-        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="Quadros Conceitos Abstratos - Tons de rosa e azul fazendo diferentes formas e combinações abstratas." src='img/OFFICE/office4.webp'/></td>
+        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="3 quadros mostrando uma floresta de pinheiros coberta de neve durante o inverno com o sol começando a aparecer por cima dos pinheiros." src='img/ROOM/room4.webp'/></td>
         
         <td style="padding-left: 30px;">
         
-        <h2>R$ 85,99 </h2> </h6>2x sem juros</h6>
+        <h2>R$ 88,99 </h2> </h6>2x sem juros</h6>
       </br>
-        <h5>Quadros Conceitos Abstratos </h5> </h6>Tamanho do Quadro(s): 42x60 </h6>
-      
+        <h5>Quadros - Amanhecer Nas Neves</h5> </h6>Tamanho do Quadro(s): 50x70 </h6>
+        <a href="?adicionar=3<php echo $key ?">Adicionar ao carrinho!</a>
       </td>
       </tr>
      
