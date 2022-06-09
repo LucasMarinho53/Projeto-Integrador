@@ -41,10 +41,10 @@
                             <strong>Quadros</strong>
                         </a> <!--link direcionando outras paginas-->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" style="background: none;" href="geek.html">Geek</a></li>
-                            <li><a class="dropdown-item" style="background: none;" href="office.html">Office</a></li>
-                            <li><a class="dropdown-item" style="background: none;" href="kids.html">Kids</a></li>
-                            <li><a class="dropdown-item" style="background: none;" href="room.html">Room</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="geek.php">Geek</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="office.php">Office</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="kids.php">Kids</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="room.php">Room</a></li>
                         </ul>
                     </li>
                 </ul>
