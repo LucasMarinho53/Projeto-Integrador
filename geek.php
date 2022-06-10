@@ -61,6 +61,7 @@ include ('geekcarrinho.php');
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" style="background: none;" href="cadastro.php">Cadastro</a></li>
                     <li><a class="dropdown-item" style="background: none;" href="login.php">Login</a></li>
+                    <li><a class="dropdown-item" style="background: none;" href="cadastroproduto.php">Cadastrar produto</a></li>
                 </ul>
                 </form>
             </div>

@@ -1,7 +1,3 @@
-<?php
-    include ('geekcarrinho.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-    <link rel="stylesheet" type="text/css" href="css/kids.css" />
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css" />
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Star Frame Kids</title>
+    <title>Star Frame Geek</title>
 </head>
 
 <body>
@@ -70,80 +66,30 @@
   </div>
   </header>
 
-  <section class="anuncio">
-    <div id="anunciotablet">
-     <strong>Acessando de um tablet? Aqui você encontra diversos quadros para várias ocasiões.</strong> 
+<section class="formcadastro">
+<div class="container">
+        <fieldset>
+            <legend><strong>Faça o cadastro do seu produto aqui!</strong></legend>
+            <form action="cadastrar-produto.php" method="post">
+            <div class="form-group">
+                <label for="nome_id"><strong>Nome</strong></label>
+                <input class="form-control" type="text" name="nome" id="nome_id" placeholder="Digite o nome do produto">
+            </div>
+            <div class="form-group">
+                <label for="preço_id"><strong>Preço</strong></label>
+                <input class="form-control" type="text" name="preço" id="preço_id" placeholder="Digite o preço do produto">
+            </div>
+            <div class="form-group">
+                <label for="tema_id"><strong>Tema</strong></label>
+                <input class="form-control" type="text" name="tema" id="tema_id" placeholder="Digite o tema do produto">
+            </div>
+            <button class="btn btn-primary" type="submit" class>Enviar</button>
+            </form>
+        </fieldset>
     </div>
-    <div id="anunciocelular">
-      <strong>Acessando de um celular? Aqui você encontra diversos quadros para várias ocasiões.</strong> 
-     </div>
-  </section>
+</section>
 
-  <section class="container">
-    
-    <table>
-      <tr>
-        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="Quadro - Urso Arqueiro - Ursinho marrom com uma aljava nas costas e um passarinho pousado em sua mão." src='img/KIDS/kids1.jfif'/></td>
-        
-        <td style="padding-left: 30px;">
-        
-        <h2>R$ 105,99 </h2> </h6>2x sem juros</h6>
-      </br>
-        <h5>Quadro - Urso Arqueiro</h5> </h6>Tamanho do Quadro(s): 21x30  </h6>
-        <a href="?adicionar=4<php echo $key ?">Adicionar ao carrinho!</a>
-      </td>
-      </tr>
-     
-    </table>
-
-    <table>
-      <tr>
-        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="Quadro - Viagem ao espaço - Rosa dentro de uma redoma em cima de uma lua observando estrelas e planetas." src='img/KIDS/kids2.jfif'/></td>
-        
-        <td style="padding-left: 30px;">
-        
-        <h2>R$ 66,99 </h2> </h6>2x sem juros</h6>
-      </br>
-        <h5>Quadro - Viagem ao espaço</h5> </h6>Tamanho do Quadro(s): 30x42 </h6>
-        <a href="?adicionar=5<php echo $key ?">Adicionar ao carrinho!</a>
-      </td>
-      </tr>
-     
-    </table>
-
-    <table>
-      <tr>
-        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="Quadro - Aventuras em alto Mar - Barco com um elefante e uma arara a bordo viajando durante o dia com gaivotas sobrevoando." src='img/KIDS/kids3.jfif'/></td>
-        
-        <td style="padding-left: 30px;">
-        
-        <h2>R$ 87,99 </h2> </h6>2x sem juros</h6>
-      </br>
-        <h5>Quadro - Aventuras em alto Mar</h5> </h6>Tamanho do Quadro(s): 15x21 </h6>
-        <a href="?adicionar=6<php echo $key ?">Adicionar ao carrinho!</a>
-      </td>
-      </tr>
-     
-    </table>
-
-   <table>
-      <tr>
-        <td><img  class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 30px;" width="400px" alt="Quadro - Fada dos Desejos - Fada de vestido amarelo fazendo um caminho de estrelas com a mágica de sua varinha." src='img/KIDS/kids4.webp'/></td>
-        
-        <td style="padding-left: 30px;">
-        
-        <h2>R$ 88,99 </h2> </h6>2x sem juros</h6>
-      </br>
-        <h5>Quadro - Fada dos Desejos</h5> </h6>Tamanho do Quadro(s): 42x60 </h6>
-        <a href="?adicionar=7<php echo $key ?">Adicionar ao carrinho!</a>
-      </td>
-      </tr>
-     
-    </table>
-
-  </section>
-
-  <footer class="container-foot text-center text-white"> <!-- Footer -->
+  <footer class="container-foot text-center text-white" > <!-- Footer -->
   
     <div class="container p-4"> <!-- Grid container -->
       
@@ -168,9 +114,6 @@
               </li>
               <li>
                 <a href="cadastro.php" class="text-primary"><strong>Cadastro</strong></a>
-              </li>
-              <li>
-                <a href="login.php" class="text-primary"><strong>Login</strong></a>
               </li>
             </ul>
           </div> <!--Grid column-->
