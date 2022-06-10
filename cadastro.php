@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-    <link rel="stylesheet" type="text/css" href="css/cadastro.css" />
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Star Frame Geek</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <title>Star Frame</title>
 </head>
 
 <body>
@@ -44,55 +44,67 @@
                             <strong>Quadros</strong>
                         </a> <!--link direcionando outras paginas-->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" style="background: none;" href="geek.php">Geek</a></li>
-                            <li><a class="dropdown-item" style="background: none;" href="office.php">Office</a></li>
-                            <li><a class="dropdown-item" style="background: none;" href="kids.php">Kids</a></li>
-                            <li><a class="dropdown-item" style="background: none;" href="room.php">Room</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="geek.html">Geek</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="office.html">Office</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="kids.html">Kids</a></li>
+                            <li><a class="dropdown-item" style="background: none;" href="room.html">Room</a></li>
                         </ul>
                     </li>
                 </ul>
                 <form class="nav-item dropdown" style="margin-right: 330px;">
-                  <button class="btn btn-primary" id="navbarDropdown" role="button" 
-                  data-bs-toggle="dropdown" aria-expanded="false">Entrar</button>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" style="background: none;" href="cadastro.php">Cadastro</a></li>
-                    <li><a class="dropdown-item" style="background: none;" href="login.php">Login</a></li>
-                </ul>
+                    <button class="btn btn-primary" id="navbarDropdown" role="button" 
+                    data-bs-toggle="dropdown" aria-expanded="false">Entrar</button>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" style="background: none;" href="cadastro.php">Cadastro</a></li>
+                      <li><a class="dropdown-item" style="background: none;" href="login.php">Login</a></li>
+                      <li><a class="dropdown-item" style="background: none;" href="cadastroproduto.php">Cadastrar produto</a></li>
+                  </ul>
                 </form>
+                
             </div>
         </div>
     </nav>
   </div>
   </header>
-
-<section class="formcadastro">
-<div class="container">
-        <fieldset>
-            <legend><strong>Faça seu cadastro aqui!</strong></legend>
-            <form action="cadastrar-cliente.php" method="post">
-            <div class="form-group">
-                <label for="nome_id"><strong>Nome</strong></label>
-                <input class="form-control" type="text" name="nome" id="nome_id" placeholder="Digite seu nome">
-            </div>
-            <div class="form-group">
-                <label for="email_id"><strong>Email</strong></label>
-                <input class="form-control" type="email" name="email" id="email_id" placeholder="Digite seu email">
-            </div>
-            <div class="form-group">
-                <label for="senha_id"><strong>Senha</strong></label>
-                <input class="form-control" type="password" name="senha" id="senha_id" placeholder="Digite sua senha">
-            </div>
-            <div class="form-group">
-                <label for="cpf_id"><strong>CPF</strong></label>
-                <input class="form-control" type="text" name="cpf" id="cpf_id" placeholder="Digite seu cpf">
-            </div>
-            <button class="btn btn-primary" type="submit" class>Enviar</button>
-            </form>
-        </fieldset>
+			
+  <section class="anuncio">
+    <div id="anunciotablet">
+     <strong>Acessando de um tablet? Aqui você encontra diversos quadros para várias ocasiões.</strong> 
     </div>
-</section>
+    <div id="anunciocelular">
+      <strong>Acessando de um celular? Aqui você encontra diversos quadros para várias ocasiões.</strong> 
+     </div>
+  </section>
 
-  <footer class="container-foot text-center text-white" > <!-- Footer -->
+  <div class="d-flex justify-content-center align-itens-center">
+  <form class="p-5 rounded shadow" action="cadastrar-cliente.php" method="post" style="width: 30rem;">
+    <h2 class="text-center pb-5 display-4">Cadastro</h2>
+    <?php if (isset($_GET['error'])) { ?>
+      <div class="alert alert-danger" role="alert">
+        <?=$_GET['error']?>
+    </div>
+    <?php } ?>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nome</label>
+    <input class="form-control" type="text" name="nome" id="nome_id" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">E-mail</label>
+    <input class="form-control" type="email" name="email" id="email_id">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Senha</label>
+    <input class="form-control" type="password" name="senha" id="senha_id">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">CPF</label>
+    <input class="form-control" type="text" name="cpf" id="cpf_id">
+  </div>
+  <button type="submit" class="btn btn-primary">Logar</button>
+</form>
+</div>
+
+  <footer class="container-foot text-center text-white"> <!-- Footer -->
   
     <div class="container p-4"> <!-- Grid container -->
       
@@ -145,5 +157,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
