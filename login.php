@@ -76,6 +76,9 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
                     <li id="contato" style="width: 165px;" class="nav-item">
                         <a class="nav-link text-primary" href="contato.html"><strong>Contato</strong></a> <!--link direcionando outras paginas-->
                     </li>
+                    <li id="contato" style="width: 165px;" class="nav-item">
+                        <a class="nav-link text-primary" href="carrinho.php"><strong>Carrinho</strong></a> <!--link direcionando outras paginas-->
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link text-primary dropdown-toggle" href="#" id="navbarDropdown" role="button" 
                             data-bs-toggle="dropdown" aria-expanded="false">
