@@ -49,6 +49,15 @@ if(isset($_GET['adicionar'])){
         die('O item esta indisponivel no momento');
       }
   }
+
+  if(isset($_GET['remover'])){
+    $idProduto = (int) $_GET['remover'];
+    if(isset($itens[$idProduto])){
+      $_SESSION['carrinho'][$idProduto]['quantidade']--;
+      
+    }
+    echo '<script>alert("O item foi removido");</script>';
+  }
 ?>
 
 </body>

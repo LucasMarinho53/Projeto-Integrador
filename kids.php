@@ -89,8 +89,9 @@
         
         <h2>R$ 105,99 </h2> </h6>2x sem juros</h6>
       </br>
-        <h5>Quadro - Urso Arqueiro</h5> </h6>Tamanho do Quadro(s): 21x30  </h6>
+        <h5>Quadro - Urso Arqueiro</h5> </h6>Tamanho do Quadro(s): 21x30  </h6> <br></br>
         <a class="btn btn-primary" href="?adicionar=4<php echo $key ?" role="button">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?remover=4<php echo $key ?" role="button">remover do carrinho!</a>
       </td>
       </tr>
      
@@ -104,8 +105,9 @@
         
         <h2>R$ 66,99 </h2> </h6>2x sem juros</h6>
       </br>
-        <h5>Quadro - Viagem ao espaço</h5> </h6>Tamanho do Quadro(s): 30x42 </h6>
+        <h5>Quadro - Viagem ao espaço</h5> </h6>Tamanho do Quadro(s): 30x42 </h6> <br></br>
         <a class="btn btn-primary" href="?adicionar=5<php echo $key ?" role="button">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?remover=5<php echo $key ?" role="button">remover do carrinho!</a>
       </td>
       </tr>
      
@@ -119,8 +121,9 @@
         
         <h2>R$ 87,99 </h2> </h6>2x sem juros</h6>
       </br>
-        <h5>Quadro - Aventuras em alto Mar</h5> </h6>Tamanho do Quadro(s): 15x21 </h6>
+        <h5>Quadro - Aventuras em alto Mar</h5> </h6>Tamanho do Quadro(s): 15x21 </h6> <br></br>
         <a class="btn btn-primary" href="?adicionar=6<php echo $key ?" role="button">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?remover=6<php echo $key ?" role="button">remover do carrinho!</a>
       </td>
       </tr>
      
@@ -134,8 +137,9 @@
         
         <h2>R$ 88,99 </h2> </h6>2x sem juros</h6>
       </br>
-        <h5>Quadro - Fada dos Desejos</h5> </h6>Tamanho do Quadro(s): 42x60 </h6>
+        <h5>Quadro - Fada dos Desejos</h5> </h6>Tamanho do Quadro(s): 42x60 </h6> <br></br>
         <a class="btn btn-primary" href="?adicionar=7<php echo $key ?" role="button">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?remover=7<php echo $key ?" role="button">remover do carrinho!</a>
       </td>
       </tr>
      

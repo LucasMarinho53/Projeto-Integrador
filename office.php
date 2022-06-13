@@ -89,8 +89,9 @@
         
         <h2>R$ 70,99 </h2> </h6>2x sem juros</h6>
       </br>
-        <h5>Quadros Abstratos </h5> </h6>Tamanho do Quadro(s): 30x42 </h6>
+        <h5>Quadros Abstratos </h5> </h6>Tamanho do Quadro(s): 30x42 </h6> <br></br>
         <a class="btn btn-primary" href="?adicionar=8<php echo $key ?" role="button">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?remover=8<php echo $key ?" role="button">remover do carrinho!</a>
       </td>
       </tr>
      
@@ -104,8 +105,9 @@
         
         <h2>R$ 59,99 </h2> </h6>2x sem juros</h6>
       </br>
-        <h5>Quadros especiais - Combinação de Cores</h5> </h6>Tamanho do Quadro(s): 42x60 </h6>
+        <h5>Quadros especiais - Combinação de Cores</h5> </h6>Tamanho do Quadro(s): 42x60 </h6> <br></br>
         <a class="btn btn-primary" href="?adicionar=9<php echo $key ?" role="button">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?remover=9<php echo $key ?" role="button">remover do carrinho!</a>
       </td>
       </tr>
      
@@ -119,8 +121,9 @@
         
         <h2>R$ 45,99 </h2> </h6>2x sem juros</h6>
       </br>
-        <h5>Quadro Flores em Preto e Branco</h5> </h6>Tamanho do Quadro(s): 50x70 </h6>
+        <h5>Quadro Flores em Preto e Branco</h5> </h6>Tamanho do Quadro(s): 50x70 </h6> <br></br>
         <a class="btn btn-primary" href="?adicionar=10<php echo $key ?" role="button">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?remover=10<php echo $key ?" role="button">remover do carrinho!</a>
       </td>
       </tr>
      
@@ -134,8 +137,9 @@
         
         <h2>R$ 85,99 </h2> </h6>2x sem juros</h6>
       </br>
-        <h5>Quadros Conceitos Abstratos </h5> </h6>Tamanho do Quadro(s): 42x60 </h6>
-        <a class="btn btn-primary" href="?adicionar=11<php echo $key ?" role="button">Adicionar ao carrinho!</a>   
+        <h5>Quadros Conceitos Abstratos </h5> </h6>Tamanho do Quadro(s): 42x60 </h6> <br></br>
+        <a class="btn btn-primary" href="?adicionar=11<php echo $key ?" role="button">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?remover=11<php echo $key ?" role="button">remover do carrinho!</a>   
       </td>
       </tr>
      
