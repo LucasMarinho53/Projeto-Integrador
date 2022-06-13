@@ -90,7 +90,7 @@ include ('geekcarrinho.php');
         <h2>R$ 80,99 </h2> </h6>2x sem juros</h6> 
       </br>
         <h5>Quadro - Fantasminhas do Pac-man</h5> </h6>Tamanho do Quadro(s): 42x60 </h6>
-        <a href="?adicionar=0<php echo $key ?">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?adicionar=0<php echo $key ?" role="button">Adicionar ao carrinho!</a>
       </td>
       </tr>
      
@@ -105,7 +105,7 @@ include ('geekcarrinho.php');
         <h2>R$ 96,99 </h2> </h6>2x sem juros</h6>
       </br>
         <h5>Quadro - Super Mario Bros</h5> </h6>Tamanho do Quadro(s): 60x90 </h6>
-        <a href="?adicionar=1<php echo $key ?">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?adicionar=1<php echo $key ?" role="button">Adicionar ao carrinho!</a>
       </td>
       </tr>
      
@@ -120,7 +120,7 @@ include ('geekcarrinho.php');
         <h2>R$ 67,99 </h2> </h6>2x sem juros</h6>
       </br>
         <h5>Quadro - Star Wars -R2D2</h5> </h6>Tamanho do Quadro(s): 30x42 </h6>
-        <a href="?adicionar=2<php echo $key ?">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?adicionar=2<php echo $key ?" role="button">Adicionar ao carrinho!</a>
       </td>
       </tr>
      
@@ -135,7 +135,7 @@ include ('geekcarrinho.php');
         <h2>R$ 88,99 </h2> </h6>2x sem juros</h6>
       </br>
         <h5>Quadro - Herói e Vilão de Gotham City - Batman e Coringa </h5> </h6>Tamanho do Quadro(s): 50x70</h6>
-        <a href="?adicionar=3<php echo $key ?">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?adicionar=3<php echo $key ?" role="button">Adicionar ao carrinho!</a>
       </td>
       </tr>
      

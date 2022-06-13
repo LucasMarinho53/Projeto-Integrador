@@ -90,7 +90,7 @@
         <h2>R$ 80,99 </h2> </h6>2x sem juros</h6>
       </br>
         <h5>Quadros - Parque Central</h5> </h6>Tamanho do Quadro(s): 30x42 </h6>
-        <a href="?adicionar=12<php echo $key ?">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?adicionar=12<php echo $key ?" role="button">Adicionar ao carrinho!</a>
       </td>
       </tr>
      
@@ -105,7 +105,7 @@
         <h2>R$ 96,99 </h2> </h6>2x sem juros</h6>
       </br>
         <h5>Quadros - Na Beira da Praia</h5> </h6>Tamanho do Quadro(s): 50x70 </h6>
-        <a href="?adicionar=13<php echo $key ?">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?adicionar=13<php echo $key ?" role="button">Adicionar ao carrinho!</a>
       </td>
       </tr>
      
@@ -120,7 +120,7 @@
         <h2>R$ 67,99 </h2> </h6>2x sem juros</h6>
       </br>
         <h5>Quadros - Por do Sol</h5> </h6>Tamanho do Quadro(s): 30x42 </h6>
-        <a href="?adicionar=14<php echo $key ?">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?adicionar=14<php echo $key ?" role="button">Adicionar ao carrinho!</a>
       </td>
       </tr>
      
@@ -135,7 +135,7 @@
         <h2>R$ 88,99 </h2> </h6>2x sem juros</h6>
       </br>
         <h5>Quadros - Amanhecer Nas Neves</h5> </h6>Tamanho do Quadro(s): 50x70 </h6>
-        <a href="?adicionar=15<php echo $key ?">Adicionar ao carrinho!</a>
+        <a class="btn btn-primary" href="?adicionar=15<php echo $key ?" role="button">Adicionar ao carrinho!</a>
       </td>
       </tr>
      
