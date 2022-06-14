@@ -31,7 +31,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             header("Location: profile.php");
 
         } else {
-            echo "Falha ao logar! E-mail ou senha incorretos";
+            echo '<script>alert("Falha ao logar! E-mail ou senha incorretos");</script>';
         }
 
     }
