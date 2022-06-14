@@ -98,7 +98,7 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">CPF</label>
-    <input class="form-control" type="text" name="cpf" id="cpf_id">
+    <input class="form-control" type="number" name="cpf" id="cpf_id">
   </div>
   <button type="submit" class="btn btn-primary">Logar</button>
 </form>

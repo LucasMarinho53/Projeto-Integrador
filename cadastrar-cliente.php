@@ -6,5 +6,5 @@
     {
         header("Location: cadastro.php");
     } else {
-        echo "Ocorreu um erro no cadastro.";
+        echo '<script>alert("Ocorreu um erro no cadastro.");</script>';
     }
