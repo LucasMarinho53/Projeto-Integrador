@@ -6,8 +6,8 @@ CREATE TABLE Cliente (
  id_cliente INT PRIMARY KEY AUTO_INCREMENT,
  CPF VARCHAR(11) NOT NULL,  
  Nome VARCHAR(150) NOT NULL,  
- Telefone INT,
- Celular INT
+ Email INT,
+ Senha INT
 ); 
 
 SELECT * FROM Cliente;
