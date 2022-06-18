@@ -1,3 +1,8 @@
+<?php
+
+include "perfil.php"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +17,14 @@
     <div class="d-flex justify-content-center align-itens-center flex-column">
     <i class="bi bi-person-fill" style="font-size: 14rem;"></i>
         Você conseguiu logar com sucesso!
+
+        <?php
+		
+			echo "<b>Nome:</b> $nome";
+			echo "<b>E-mail:</b> $email";
+			echo "<b>CPF:</b> $CPF";
+	?>
+         
         <a href="logout.php" class="btn btn-warning">SAIR</a>
     </div>
 </body>

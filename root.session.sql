@@ -12,6 +12,8 @@ CREATE TABLE Cliente (
 
 SELECT * FROM Cliente;
 
+DROP TABLE cliente;
+
 CREATE TABLE login_cliente(
  Email VARCHAR(150),
  Senha VARCHAR(150)
