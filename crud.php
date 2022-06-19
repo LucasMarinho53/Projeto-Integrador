@@ -7,7 +7,7 @@
         $link = getConnection();
 
         # define a query
-        $query = "insert into Cliente(nome, email, senha, cpf) values ('{$Nome}', '{$Email}', '{$Senha}', '{$CPF}')";
+        $query = "insert into Cliente(Nome, Email, Senha, CPF) values ('{$Nome}', '{$Email}', '{$Senha}', '{$CPF}')";
 
         # mysqli_query executa a query no banco
         # retorna true|false - false quando tem erros e true não quando não tem erros

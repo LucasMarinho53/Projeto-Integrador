@@ -1,21 +1,46 @@
-<?php
-include ('geekcarrinho.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Carrinho</title>
+    <title>Star Frame</title>
+<style>
+
+div.d-flex{
+    background-color: #FEEBC2;
+}
+
+h2{
+  display:flex;
+  justify-content:center;
+  margin-top:30px;
+  margin-bottom:100px;
+
+}
+p{
+  display:flex;
+  justify-content:center;
+}
+
+h5{
+  display:flex;
+  justify-content:center;
+}
+</style>
+
 </head>
+
 <body>
-<header class="container-fluid">
+
+  <header class="container-fluid">
 
     <div class="topo">
 
@@ -36,8 +61,8 @@ include ('geekcarrinho.php');
                         <a class="nav-link text-primary" href="contato.html"><strong>Contato</strong></a> <!--link direcionando outras paginas-->
                     </li>
                     <li id="contato" style="width: 165px;" class="nav-item">
-                        <a class="nav-link text-primary" href="carrinho.php"><strong>Carrinho</strong></a> <!--link direcionando outras paginas-->
-                    </li>
+                      <a class="nav-link text-primary" href="carrinho.php"><strong>Carrinho</strong></a> <!--link direcionando outras paginas-->
+                  </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link text-primary dropdown-toggle" href="#" id="navbarDropdown" role="button" 
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -68,33 +93,29 @@ include ('geekcarrinho.php');
   </div>
   </header>
 
-<?php
-    
-    
-    
-    if ($_SESSION['carrinho'] == null){
-        echo '<h1>Carrinho vazio</h1>';
-    }else {
-        echo '<h1>Carrinho</h1>';
-        echo '<table class="table table-striped">';
-        echo '<thead>';
-        echo '<tr>';
-        echo '<th scope="col">Nome</th>';
-        echo '<th scope="col">Preço</th>';
-        echo '<th scope="col">Quantidade</th>';
-        echo '<th scope="col">Subtotal</th>';
-        echo '</tr>';
-        foreach ($_SESSION['carrinho'] as $key => $value){
-            echo '<tr>';
-            echo '<th>'.$value['nome'].'</th>';
-            echo '<th>'.$value['preco'].'</th>';
-            echo '<th>'.$value['quantidade'].'</th>';
-            echo '<th>'.$value['preco']*$value['quantidade'].'</th>';
-            echo '</tr>';
-        }
-        echo '</table>';
-    }
-?>
+  <section class="anuncio">
+    <div id="anunciotablet">
+     <strong>Acessando de um tablet? Aqui você encontra diversos quadros para várias ocasiões.</strong> 
+    </div>
+    <div id="anunciocelular">
+      <strong>Acessando de um celular? Aqui você encontra diversos quadros para várias ocasiões.</strong> 
+     </div>
+  </section>
+
+<div class="d-flex justify-content-center align-itens-center">
+  <form class="p-5 rounded shadow" action="cadastrar-cliente.php" method="post" style="width: 30rem;">
+    <div class="mb-3">
+
+    <h2 class="text-center pb-5 display-4">Cadastro concluído</h2>
+
+    <p>Obrigado por realizar o cadastro.</p>
+
+    <h5><a href="login.php" class="btn btn-primary">Realize o seu login...</a></h5>
+
+
+    </div>
+  </form>
+</div>
 
 <footer class="container-foot text-center text-white"> <!-- Footer -->
   
@@ -153,5 +174,4 @@ include ('geekcarrinho.php');
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

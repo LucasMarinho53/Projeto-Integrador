@@ -1,3 +1,20 @@
+
+<?php
+include_once('.\db.conn.php');
+
+if(!empty($_GET['search']))
+    {
+      $data = $_GET['search'];
+      $sql = "SELECT * FROM venda WHERE Mes_venda LIKE '%$data%'";
+
+    }
+else
+  {
+    $sql = 'SELECT * FROM venda';
+  }
+  $result = $mysqli -> query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,15 +26,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
-    <link rel="stylesheet" type="text/css" href="css/login.css"/>
-    <title>Star Frame</title>
+    <title>Star Frame - Relatório</title>
+
+    <style>
+
+      h2{
+        display:flex;
+        justify-content:center;
+        margin-top:10px;
+        margin-bottom:10px;
+
+      }
+      .box-search{
+        display:flex;
+        justify-content:center;
+        gap:.1%;
+      }
+
+
+    </style>
 </head>
 
 <body>
 
-  <header class="container-fluid">
+<header class="container-fluid">
 
-    <div class="topo">
+<div class="topo">
 
     <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
@@ -66,54 +100,55 @@
         </div>
     </nav>
   </div>
-  </header>
-			
-  <section class="anuncio">
-    <div id="anunciotablet">
-     <strong>Acessando de um tablet? Aqui você encontra diversos quadros para várias ocasiões.</strong> 
-    </div>
-    <div id="anunciocelular">
-      <strong>Acessando de um celular? Aqui você encontra diversos quadros para várias ocasiões.</strong> 
-     </div>
-  </section>
+</header>
 
-  <div class="d-flex justify-content-center align-itens-center">
-  <form class="p-5 rounded shadow" action="cadastrar-cliente.php" method="post" style="width: 30rem;">
-    <h2 class="text-center pb-5 display-4">Cadastro</h2>
-    <?php if (isset($_GET['error'])) { ?>
-      <div class="alert alert-danger" role="alert">
-        <?=$_GET['error']?>
-    </div>
-    <?php } ?>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nome</label>
-    <input class="form-control" type="text" name="Nome" id="nome_id" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">E-mail</label>
-    <input class="form-control" type="email" name="Email" id="email_id">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Senha</label>
-    <input class="form-control" type="password" name="Senha" id="senha_id">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">CPF</label>
-    <input class="form-control" type="number" name="CPF" id="cpf_id">
-  </div>
-      <button type="submit" class="btn btn-primary" href="concluido.php" class="btn btn-primary">Cadastrar</button>
-</form>
+<h2>Relatório de Vendas</h2>
+
+<div class="box-search">
+
+  <input type="search" class="form-control w-25" placeholder="Pesquisar" id="pesquisar">
+  <button onclick="searchData()" class="btn btn-dark">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+    </svg>
+  </button>
 </div>
 
-  <footer class="container-foot text-center text-white"> <!-- Footer -->
+
+<div class="container">
+
+        <table class="table table=stripped">
+            <thead>
+                <th>ID da Venda</th>
+                <th>ID do Produto</th>
+                <th>Valor</th>
+                <th>Quantidade vendida</th>
+                <th>Mês da compra</th>
+            </thead>
+            <tbody>
+                <?php
+                  while($user_data = mysqli_fetch_assoc($result)){
+                    echo "<tr>";
+                    echo "<td>".$user_data['ID_Venda']."</td>";
+                    echo "<td>".$user_data['ID_produto']."</td>";
+                    echo "<td>".$user_data['ValorTotal']."</td>";
+                    echo "<td>".$user_data['Quantidadevenda']."</td>";
+                    echo "<td>".$user_data['Mes_Venda']."</td>";
+                  }
+                ?>
+            </tbody>
+        </table>
+</div>
+
+ <footer class="container-foot text-center text-white"> <!-- Footer -->
   
-    <div class="container p-4"> <!-- Grid container -->
+<div class="container p-4"> <!-- Grid container -->
       
-      <section class="quemsomos col-4 mt-2 text-primary"> <!-- Section: Text -->
-        <p>
-         <strong> Somos uma empresa especializada em vendas de quadros personalizados, com mais de 20 anos de experiência no mercado. Nós siga! </strong>
-        </p>
-      </section> <!-- Section: Text -->
+    <section class="quemsomos col-4 mt-2 text-primary"> <!-- Section: Text -->
+    <p>
+        <strong> Somos uma empresa especializada em vendas de quadros personalizados, com mais de 20 anos de experiência no mercado. Nós siga! </strong>
+    </p>
+    </section> <!-- Section: Text -->
       
       
       <section class="links"> <!-- Section: Links -->
@@ -162,4 +197,19 @@
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+<script>
+  var search = document.getElementById('pesquisar');
+  search.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") 
+        {
+            searchData();
+        }
+    });
+  function searchData(){
+    window.location = "relatorio.php?search="+search.value;
+  }
+
+</script>
+
+
 </html>

@@ -2,9 +2,9 @@
 
     require_once('./crud.php');
 
-    if(fnAddCliente($_POST['nome'], $_POST['email'], $_POST['senha'], $_POST['cpf'])) 
+    if(fnAddCliente($_POST['Nome'], $_POST['Email'], $_POST['Senha'], $_POST['CPF'])) 
     {
-        header("Location: cadastro.php");
+        header("Location: concluido.php");
     } else {
         echo '<script>alert("Ocorreu um erro no cadastro.");</script>';
     }
