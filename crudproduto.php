@@ -7,7 +7,7 @@
         $link = getConnection();
 
         # define a query
-        $query = "insert into Produtos(nome, preço, tema) values ('{$Nome}', '{$Preço}', '{$Tema}')";
+        $query = "insert into Produtos(Nome, Preço, Tema) values ('{$Nome}', '{$Preço}', '{$Tema}')";
 
         # mysqli_query executa a query no banco
         # retorna true|false - false quando tem erros e true não quando não tem erros

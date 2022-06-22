@@ -67,30 +67,6 @@
     </nav>
   </div>
   </header>
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> <!--colocar banner foto combinando height-->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-       </div>
-    <div class="carousel-inner"> <!--colocar banner foto combinando height-->
-      <div class="carousel-item active">
-        <img src="img/decorando-com-quadros.webp" class="d-block w-100" alt="diversos quadros expostos numa parede sobre uma escada com os dizeres em preto no canto da imagem: decorando com quadros.">
-      </div>
-      <div class="carousel-item"> <!--colocar banner foto combinando height-->
-        <img src="img/banner5.jpeg" class="d-block w-100" alt="quadro abstrato tons de cinza e branco acima de uma cama de casal, pendurado numa parede pastel.">
-      </div><!--observação: Parcialmente feito-->
-      
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 			
   <section class="anuncio">
     <div id="anunciotablet">
@@ -111,17 +87,17 @@
     <?php } ?>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nome</label>
-    <input class="form-control" type="text" name="nome" id="nome_id" placeholder="Digite o nome do produto">
+    <input class="form-control" type="text" name="Nome" id="nome_id" placeholder="Digite o nome do produto">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Preço</label>
-    <input class="form-control" type="text" name="preço" id="preço_id" placeholder="Digite o preço do produto">
+    <input class="form-control" type="text" name="Preço" id="preço_id" placeholder="Digite o preço do produto">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Tema</label>
-    <input class="form-control" type="text" name="tema" id="tema_id" placeholder="Digite o tema do produto">
+    <input class="form-control" type="text" name="Tema" id="tema_id" placeholder="Digite o tema do produto">
   </div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
+  <button type="submit" class="btn btn-primary" href="concluidoproduto.php" class="btn btn-primary btn-sm">Cadastrar</button>
 </form>
 </div>
 

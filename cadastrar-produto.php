@@ -2,9 +2,9 @@
 
     require_once('./crudproduto.php');
 
-    if(fnAddProdutos($_POST['nome'], $_POST['preço'], $_POST['tema'])) 
+    if(fnAddProdutos($_POST['Nome'], $_POST['Preço'], $_POST['Tema'])) 
     {
-        header("Location: cadastroproduto.php");
+        header("Location: concluidoproduto.php");
     } else {
         echo "Ocorreu um erro no cadastro.";
     }
