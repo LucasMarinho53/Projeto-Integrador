@@ -1,7 +1,6 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: #FEEBC2;
 }
 
 .center {
@@ -11,6 +10,10 @@ body{
     overflow: hidden;
     position: relative;
     left: 47%;
+}
+
+.p-5{
+    background-color:#FEEBC2 ;
 }
 
 .center h1{

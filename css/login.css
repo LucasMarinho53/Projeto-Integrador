@@ -1,7 +1,6 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: #FEEBC2;
 }
 
 .center {
@@ -13,11 +12,14 @@ body{
     left: 47%;
 }
 
+.p-5{
+    background-color:#FEEBC2 ;
+}
+
 .center h1{
     text-align: center;
     padding: 0 0 20px 0;
     margin-right: 150px;
-    color: #0d6efd;
 }
 
 .center form{

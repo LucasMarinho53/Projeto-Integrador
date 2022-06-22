@@ -58,7 +58,6 @@
                       <li><a class="dropdown-item" style="background: none;" href="cadastro.php">Cadastro</a></li>
                       <li><a class="dropdown-item" style="background: none;" href="login.php">Login</a></li>
                       <li><a class="dropdown-item" style="background: none;" href="cadastroproduto.php">Cadastrar produto</a></li>
-                      <li><a class="dropdown-item" style="background: none;" href="relatorio.php">Relatório</a></li>
                   </ul>
                 </form>
                 
@@ -67,6 +66,30 @@
     </nav>
   </div>
   </header>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> <!--colocar banner foto combinando height-->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       </div>
+    <div class="carousel-inner"> <!--colocar banner foto combinando height-->
+      <div class="carousel-item active">
+        <img src="img/decorando-com-quadros.webp" class="d-block w-100" alt="diversos quadros expostos numa parede sobre uma escada com os dizeres em preto no canto da imagem: decorando com quadros.">
+      </div>
+      <div class="carousel-item"> <!--colocar banner foto combinando height-->
+        <img src="img/banner5.jpeg" class="d-block w-100" alt="quadro abstrato tons de cinza e branco acima de uma cama de casal, pendurado numa parede pastel.">
+      </div><!--observação: Parcialmente feito-->
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 			
   <section class="anuncio">
     <div id="anunciotablet">
@@ -87,21 +110,21 @@
     <?php } ?>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nome</label>
-    <input class="form-control" type="text" name="Nome" id="nome_id" aria-describedby="emailHelp">
+    <input class="form-control" type="text" name="nome" id="nome_id" aria-describedby="emailHelp" placeholder="Digite o seu nome" >
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">E-mail</label>
-    <input class="form-control" type="email" name="Email" id="email_id">
+    <input class="form-control" type="email" name="email" id="email_id" placeholder="Digite o seu email" >
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Senha</label>
-    <input class="form-control" type="password" name="Senha" id="senha_id">
+    <input class="form-control" type="password" name="senha" id="senha_id"  placeholder="Digite a sua senha">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">CPF</label>
-    <input class="form-control" type="number" name="CPF" id="cpf_id">
+    <input class="form-control" type="number" name="cpf" id="cpf_id" placeholder="Digite o seu CPF" >
   </div>
-      <button type="submit" class="btn btn-primary" href="concluido.php" class="btn btn-primary">Cadastrar</button>
+  <button type="submit" class="btn btn-primary">Cadastrar</button>
 </form>
 </div>
 

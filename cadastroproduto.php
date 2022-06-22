@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-    <link rel="stylesheet" type="text/css" href="css/cadastro.css" />
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Star Frame Geek</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/cadastroproduto.css"/>
+    <title>Star Frame</title>
 </head>
 
 <body>
@@ -52,45 +52,79 @@
                     </li>
                 </ul>
                 <form class="nav-item dropdown" style="margin-right: 330px;">
-                  <button class="btn btn-primary" id="navbarDropdown" role="button" 
-                  data-bs-toggle="dropdown" aria-expanded="false">Entrar</button>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" style="background: none;" href="cadastro.php">Cadastro</a></li>
-                    <li><a class="dropdown-item" style="background: none;" href="login.php">Login</a></li>
-                    <li><a class="dropdown-item" style="background: none;" href="cadastroproduto.php">Cadastrar produto</a></li>
-                    <li><a class="dropdown-item" style="background: none;" href="relatorio.php">Relatório</a></li>
-                </ul>
+                    <button class="btn btn-primary" id="navbarDropdown" role="button" 
+                    data-bs-toggle="dropdown" aria-expanded="false">Entrar</button>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" style="background: none;" href="cadastro.php">Cadastro</a></li>
+                      <li><a class="dropdown-item" style="background: none;" href="login.php">Login</a></li>
+                      <li><a class="dropdown-item" style="background: none;" href="cadastroproduto.php">Cadastrar produto</a></li>
+                  </ul>
                 </form>
+                
             </div>
         </div>
     </nav>
   </div>
   </header>
 
-<section class="formcadastro">
-<div class="container">
-        <fieldset>
-            <legend><strong>Faça o cadastro do seu produto aqui!</strong></legend>
-            <form action="cadastrar-produto.php" method="post">
-            <div class="form-group">
-                <label for="nome_id"><strong>Nome</strong></label>
-                <input class="form-control" type="text" name="nome" id="nome_id" placeholder="Digite o nome do produto">
-            </div>
-            <div class="form-group">
-                <label for="preço_id"><strong>Preço</strong></label>
-                <input class="form-control" type="text" name="preço" id="preço_id" placeholder="Digite o preço do produto">
-            </div>
-            <div class="form-group">
-                <label for="tema_id"><strong>Tema</strong></label>
-                <input class="form-control" type="text" name="tema" id="tema_id" placeholder="Digite o tema do produto">
-            </div>
-            <button class="btn btn-primary" type="submit" class>Enviar</button>
-            </form>
-        </fieldset>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> <!--colocar banner foto combinando height-->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       </div>
+    <div class="carousel-inner"> <!--colocar banner foto combinando height-->
+      <div class="carousel-item active">
+        <img src="img/decorando-com-quadros.webp" class="d-block w-100" alt="diversos quadros expostos numa parede sobre uma escada com os dizeres em preto no canto da imagem: decorando com quadros.">
+      </div>
+      <div class="carousel-item"> <!--colocar banner foto combinando height-->
+        <img src="img/banner5.jpeg" class="d-block w-100" alt="quadro abstrato tons de cinza e branco acima de uma cama de casal, pendurado numa parede pastel.">
+      </div><!--observação: Parcialmente feito-->
+      
     </div>
-</section>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+			
+  <section class="anuncio">
+    <div id="anunciotablet">
+     <strong>Acessando de um tablet? Aqui você encontra diversos quadros para várias ocasiões.</strong> 
+    </div>
+    <div id="anunciocelular">
+      <strong>Acessando de um celular? Aqui você encontra diversos quadros para várias ocasiões.</strong> 
+     </div>
+  </section>
 
-  <footer class="container-foot text-center text-white" > <!-- Footer -->
+  <div class="d-flex justify-content-center align-itens-center">
+  <form class="p-5 rounded shadow" action="cadastrar-produto.php" method="post" style="width: 30rem;">
+    <h2 class="text-center pb-5 display-4">Cadastro de produto!</h2>
+    <?php if (isset($_GET['error'])) { ?>
+      <div class="alert alert-danger" role="alert">
+        <?=$_GET['error']?>
+    </div>
+    <?php } ?>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nome</label>
+    <input class="form-control" type="text" name="nome" id="nome_id" placeholder="Digite o nome do produto">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Preço</label>
+    <input class="form-control" type="text" name="preço" id="preço_id" placeholder="Digite o preço do produto">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Tema</label>
+    <input class="form-control" type="text" name="tema" id="tema_id" placeholder="Digite o tema do produto">
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+</div>
+
+  <footer class="container-foot text-center text-white"> <!-- Footer -->
   
     <div class="container p-4"> <!-- Grid container -->
       
@@ -143,5 +177,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
