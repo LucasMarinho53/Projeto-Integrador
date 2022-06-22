@@ -58,6 +58,7 @@
                       <li><a class="dropdown-item" style="background: none;" href="cadastro.php">Cadastro</a></li>
                       <li><a class="dropdown-item" style="background: none;" href="login.php">Login</a></li>
                       <li><a class="dropdown-item" style="background: none;" href="cadastroproduto.php">Cadastrar produto</a></li>
+                      <li><a class="dropdown-item" style="background: none;" href="relatorio.php">Relatório</a></li>
                   </ul>
                 </form>
                 
@@ -124,7 +125,7 @@
     <label for="exampleInputPassword1" class="form-label">CPF</label>
     <input class="form-control" type="number" name="cpf" id="cpf_id" placeholder="Digite o seu CPF" >
   </div>
-  <button type="submit" class="btn btn-primary">Cadastrar</button>
+  <button type="submit" class="btn btn-primary" href="concluido.php" class="btn btn-primary">Cadastrar</button>
 </form>
 </div>
 

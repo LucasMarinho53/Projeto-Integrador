@@ -62,6 +62,7 @@ include('login-cliente.php');
                       <li><a class="dropdown-item" style="background: none;" href="cadastro.php">Cadastro</a></li>
                       <li><a class="dropdown-item" style="background: none;" href="login.php">Login</a></li>
                       <li><a class="dropdown-item" style="background: none;" href="cadastroproduto.php">Cadastrar produto</a></li>
+                      <li><a class="dropdown-item" style="background: none;" href="relatorio.php">Relatório</a></li>
                   </ul>
                 </form>
                 
