@@ -1,0 +1,352 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.center {
+    width: 250px;
+    margin-top: 20px;
+    height: 45vh;
+    overflow: hidden;
+    position: relative;
+    left: 47%;
+}
+
+.p-5{
+    background-color:#FEEBC2 ;
+}
+
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin-right: 150px;
+}
+
+.center form{
+    padding: 0 0 0 0;
+}
+
+form .txt_field{
+    position: relative;
+    margin: 30px 0;
+}
+
+.txt_field input{
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.txt_field label{
+    position: absolute;
+    transition: .5s;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 20%;
+    left: 5px;
+    color: #adadad;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:focus ~ label{
+    top: -5px;
+    color: #0d6efd;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:focus ~ span::before{
+    width: 100%;
+}
+
+input#botaoentrar{
+    width: 195px;
+    height: 50px;
+    border: 1px solid;
+    background: #0d6efd;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input#botaoentrar:hover{
+    border-color: #2691d9;
+    transition: .5s;
+}
+
+.signup_link{
+    margin: 30px 0;
+    font-size: 16px;
+    color: #444444;
+}
+
+.signup_link a{
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.signup_link a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1992px) and (min-width:1468px){
+    
+    header.container-fluid div.topo nav.navbar div.collapse ul li{ /*HEADER*/
+        margin-left: 50px;
+        font-size: 15px;
+        /*background-color: blue;*/
+    }
+
+    header.container-fluid ul.dropdown-menu a.dropdown-item{ /*HEADER*/
+        /*background-color: blue;*/
+        font-size: 15px;
+    }
+
+    header.container-fluid form.pesquisar{ /*HEADER*/
+        width: 400px;
+        /*background-color: #000000;*/
+        margin-bottom: 9px;
+        margin-left: 50px;
+    }
+
+    footer.container-foot img#logofooter{ /*FOOTER*/
+        margin-right: 805px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.mapa{ /*FOOTER*/
+        margin-right: 230px;
+    }
+}
+
+@media screen and (max-width:992px) and (min-width:778px){
+
+    header.container-fluid div.topo nav.navbar a{ /*HEADER*/
+        /*background-color: #000000;*/
+        font-size: 15px;
+        margin: -15px;
+    }
+
+    header.container-fluid div.topo nav.navbar div.collapse ul li{ /*HEADER*/
+        margin-left: auto;
+        margin-right: -75px;
+        /*background-color: blue;*/
+    }
+
+    section.anuncio div#anunciotablet{ /*Anuncio*/
+        display: block;
+    }
+
+    div.center{
+        left: 43%;
+    }
+
+    section.container div.row div.text-center img#quadro1{
+        /*background-color: black;*/
+        width: 130px;
+        margin-right: -15px;
+    }
+
+    section.container div.row div.text-center img#quadro2{
+        /*background-color: black;*/
+        width: 130px;
+        margin-right: -10px;
+    }
+
+    section.container div.row div.text-center img#quadro3{
+        /*background-color: black;*/
+        width: 130px;
+        margin-left: -65px;
+    }
+
+    section.container div.col-4 h4{
+        font-size: 15px;
+    }
+
+    section.container div.quadro img{
+        width: 250px;
+        height: 250px;
+        margin-left: 220px;
+    }
+
+    section.container div#h4 h4{
+        font-size: 17px;
+    }
+
+    header.container-fluid ul.dropdown-menu a.dropdown-item{ /*HEADER*/
+        /*background-color: blue;*/
+        height: 45px;
+        font-size: 15px;
+    }
+
+    header.container-fluid form.nav-item{ /*HEADER*/
+        /*background-color: #000000;*/
+        margin-bottom: 9px;
+        margin-left: 150px;
+    }
+ 
+    footer.container-foot section.quemsomos{ /*FOOTER*/
+        height: 100px;
+        margin-left: 70px;
+        margin-bottom: 10px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.links{ /*FOOTER*/
+        height: 150px;
+        width: 100px;
+        margin-top: 50px;
+        margin-bottom: -60px;
+        margin-left: 170px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot img#logofooter{ /*FOOTER - remoção da logo*/  
+        margin-right: 322px;
+        height: 0px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.mapa{ /*FOOTER*/
+        margin-left: 500px;
+        margin-bottom: 50px;
+        /*background-color: black;*/
+    }
+}
+
+@media screen and (max-width:667px){
+    
+    header.container-fluid div.topo nav.navbar a{ /*HEADER*/
+        /*background-color: #000000;*/
+        margin-left: 130px;
+        font-size: 15px;
+    }
+
+    section.anuncio div#anunciocelular{ /*Anuncio*/
+        display: block;
+    }
+
+    header.container-fluid form.nav-item{ /*HEADER*/
+        /*background-color: #000000;*/
+        margin-bottom: 9px;
+        margin-left: 130px;
+    }
+
+    div.center{
+        left: 38%;
+    }
+
+    section.container div.row div.text-center img#quadro1{
+        /*background-color: black;*/
+        width: 100px;
+        margin-right: -45px;
+    }
+
+    section.container div.row div.text-center img#quadro2{
+        /*background-color: black;*/
+        width: 100px;
+        margin-right: -40px;
+    }
+
+    section.container div.row div.text-center img#quadro3{
+        /*background-color: black;*/
+        width: 100px;
+        margin-left: -95px;
+    }
+
+    section.container div.col-4 h4{
+        font-size: 14px;
+    }
+
+    section.container div.quadro img{
+        width: 230px;
+        height: 230px;
+        margin-left: 140px;
+    }
+
+    section.container div#h4 h4{
+        font-size: 16px;
+    }
+
+    footer.container-foot section.mapa{ /*FOOTER remoção do mapa*/
+        margin-left: -1500px;
+        margin-bottom: 50px;
+        width: 0px;
+        height: 0px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.quemsomos{ /*FOOTER*/
+        height: 50px;
+        margin-left: 170px;
+        margin-bottom: 0px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.links{ /*FOOTER*/
+        height: 50px;
+        width: 100px;
+        margin-top: 130px;
+        margin-bottom: 0px;
+        margin-left: 200px;
+        /*background-color: black;*/
+    }
+}
+
+@media screen and (max-width:567px){
+   
+    header.container-fluid div.topo nav.navbar a{ /*HEADER*/
+        /*background-color: #000000;*/
+        margin-left: -10px;
+        font-size: 15px;
+    }
+
+    div.center{
+        left: 33%;
+    }
+
+    footer.container-foot section.quemsomos{ /*FOOTER*/
+        height: 100px;
+        font-size: 15px;
+        margin-left: 170px;
+        margin-bottom: 10px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.links{ /*FOOTER*/
+        height: 150px;
+        width: 100px;
+        margin-left: 205px;
+        margin-top: 70px;
+        margin-bottom: -70px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot img#logofooter{ /*FOOTER - remoção da logo*/  
+        margin-right: 322px;
+        height: 0px;
+        /*background-color: black;*/
+    }
+
+    footer.container-foot section.mapa{ /*FOOTER - remoção do mapa*/
+        margin-left: 100px;
+        width: 0px;
+        height: 0px;
+        /*background-color: black;*/
+    }
+}
